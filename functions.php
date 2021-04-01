@@ -15,7 +15,7 @@ $argVar = array(
     'phone' => 'tel:+552136138404',
     'showphone' => '(21) 3613-8404',
     'showphoneshort' => '3613-8404',
-    'showmobile' => '(21) 99174-2368',
+    'showmobile' => '(21) 96830-2337',
 
     
     'maps' => 'https://g.page/dr-limpa-tudo-rj?share',

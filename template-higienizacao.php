@@ -153,6 +153,9 @@ get_header();
 							<img src="<?php echo get_bloginfo('template_url'); ?>/img/landing/parceiros/sheraton.png" alt="" class="img-single">
 						</div>
 						<div class="img-clients">
+							<img src="<?php echo get_bloginfo('template_url'); ?>/img/landing/parceiros/atitude.png" alt="" class="img-single">
+						</div>
+						<div class="img-clients">
 							<img src="<?php echo get_bloginfo('template_url'); ?>/img/landing/parceiros/supergasbras.png" alt="" class="img-single">
 						</div>
 					</div>
