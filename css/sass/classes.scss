@@ -1,6 +1,6 @@
 /* GLOBAL */
 * { margin: 0px; word-wrap: break-word; -webkit-font-smoothing: antialiased; }
-body, html { margin: 0px; padding: 0px; font-family: 'Open Sans'; }
+body, html { margin: 0px; padding: 0px; font-family: 'Open Sans', Arial; }
 body { background-color: $corBranco; color: $corPrincipal; /* margin-top: 100px; */ }
 a, a:hover, a:active, a:focus, a:visited { cursor: pointer; text-decoration: none; color: $corTerceira; }
 
@@ -17,7 +17,7 @@ main {
 	}
 }
 h1, h2, h3, h4, h5, h6 { 
-	font-family: 'Open Sans';
+	font-family: 'Open Sans', Arial;
     font-weight: 700;
 	margin: 0px;
 	&.title {

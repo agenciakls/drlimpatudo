@@ -12,11 +12,17 @@
 
     <!-- ESTILOS -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" async>
-	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/style.css?v=1.0.0" async>
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet" async>
+	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/style.css?v=1.0.5" async>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i" rel="stylesheet" async>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" async>
-	<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css" async>
-	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" async>
+	<?php
+	if (is_front_page()) {
+		?>
+		<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css" async>
+		<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" async>
+		<?php
+	}
+	?>
     
 	<link rel="shortcut icon" type="image/x-icon" href="<?php echo get_bloginfo('template_url'); ?>/img/logo-favicon.png"> 
     
@@ -33,9 +39,6 @@
 	<script async defer crossorigin="anonymous" src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v7.0&appId=278603560113738&autoLogAppEvents=1" nonce="b4ioWcSu"></script>
 	<meta property="fb:app_id" content="278603560113738" />
 	<meta property="fb:admins" content="100003466640029"/>
-
-	<!-- AddThis -->
-	<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5898baa38ce733a3"></script>
 	
 	<!-- SCHEMA -->
 	<script type="application/ld+json"> { "@context" : "http://schema.org", "@type" : "Organization", "name" : "Dr Limpa Tudo", "url" : "https://www.drlimpatudorj.com.br", "sameAs" : [ "https://www.facebook.com/DrLimpaTudoRJ/", "https://www.instagram.com/drlimpatudorj/", "https://www.youtube.com/channel/UCvK1ARP6BQZ03c1XqBTxOAg?sub_confirmation=1",  ], "address": { "@type": "PostalAddress", "streetAddress": "Av. Alm. Júlio de Sá Bierrenbach, 65 - Bloco 1, Sala 320 - Barra da Tijuca, Rio de Janeiro - RJ, 22775-028", "addressRegion": "CA", "postalCode": "22775028", "addressCountry": "BR" } } </script>
@@ -68,7 +71,6 @@
 	}
 	?>
 	<?php wp_head(); ?>
-	<?php flush(); ?>
 </head>
 <body>
 	<?php get_template_part('templates/part', 'pre-header'); ?>

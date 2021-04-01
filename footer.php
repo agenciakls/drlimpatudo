@@ -76,39 +76,36 @@
     <!-- SCRIPTS -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 
-    <!-- BOOTSTRAP -->
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<?php
+	if (is_front_page()) {
+		?>
+		<!-- BOOTSTRAP -->
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+		<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+		<?php
+	}
+	?>
 
     <!-- FUNCTIONS -->
-    <script src="<?php bloginfo('template_url'); ?>/js/functions.js?v=1.1.19"></script>
+    <script src="<?php bloginfo('template_url'); ?>/js/functions.js?v=1.1.21"></script>
+	<?php if (is_front_page()) { ?><script src="<?php bloginfo('template_url'); ?>/js/home.js?v=1.1.2"></script><?php }?>
 
 	<!-- GOOGLE ADS -->
 	<script>
 	function gtag_report_conversion() {
-		gtag('event', 'conversion', {
-			'send_to': 'AW-687319088/zqXhCOad_rcBELDQ3scC',
-			'event_category': 'Compra',
-			'event_label': 'Dr Limpa Tudo',
-			'value': 1,
-			'currency': 'USD',
-		});
+		gtag('event', 'conversion', { 'send_to': 'AW-687319088/zqXhCOad_rcBELDQ3scC', 'event_category': 'Compra', 'event_label': 'Dr Limpa Tudo', 'value': 1, 'currency': 'USD', });
 	}
 	function gaGoogle(categoria = 'contato') {
-		gtag('event', 'contato', {
-			'event_category': categoria,
-			'event_label': 'Entrar em Contato',
-			'value': 1
-		});
+		gtag('event', 'contato', { 'event_category': categoria, 'event_label': 'Entrar em Contato', 'value': 1 });
 	}
-	$('.button-primary').on('click', function () { gaGoogle('site'); gtag_report_conversion(); console.log('Conversion'); });
-	$('.button-secundary').on('click', function () { gaGoogle('site'); gtag_report_conversion(); console.log('Conversion'); });
-	$('.button-contato').on('click', function () { gaGoogle('formulario'); gtag_report_conversion(); console.log('Conversion'); });
-	$('.button-whatsapp').on('click', function () { gaGoogle('whatsapp'); gtag_report_conversion(); console.log('Conversion'); });
-	$('.button-call').on('click', function () { gaGoogle('ligacao'); gtag_report_conversion(); console.log('Conversion'); });
-	$('.action-info').on('click', function () { gaGoogle('info'); gtag_report_conversion(); console.log('Conversion'); });
+	$('.button-primary').on('click', function () { gaGoogle('site'); gtag_report_conversion(); });
+	$('.button-secundary').on('click', function () { gaGoogle('site'); gtag_report_conversion(); });
+	$('.button-contato').on('click', function () { gaGoogle('formulario'); gtag_report_conversion(); });
+	$('.button-whatsapp').on('click', function () { gaGoogle('whatsapp'); gtag_report_conversion(); });
+	$('.button-call').on('click', function () { gaGoogle('ligacao'); gtag_report_conversion(); });
+	$('.action-info').on('click', function () { gaGoogle('info'); gtag_report_conversion(); });
 	</script>
 
     <?php wp_footer(); ?>
