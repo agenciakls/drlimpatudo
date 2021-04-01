@@ -1,0 +1,35 @@
+.landing-portfolio {
+	padding: 15px 0px;
+	.portfolio-head {
+		text-transform: uppercase;
+		font-size: 30px;
+	}
+	.portfolio-single {
+		display: flex;
+		justify-content: flex-start;
+		text-align: center;
+		color: $corBranco;
+		flex-flow: column;
+		align-items: center;
+		margin: 10px 0px 10px;
+		.img-portfolio {
+			width: 80px;
+			margin: 30px;
+		}
+	}
+}	
+@media screen and (max-width: $xsWidth) {
+
+}
+@media screen and (min-width: $smWidth) and (max-width: $mdWidth) {
+
+}
+@media screen and (min-width: $mdWidth) and (max-width: $lgWidth) {
+
+}
+@media screen and (min-width: $lgWidth) and (max-width: $xlWidth) {
+	
+}
+@media screen and (min-width: $xlWidth) {
+
+}

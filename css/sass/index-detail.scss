@@ -1,0 +1,113 @@
+.section-detail {
+	background-color: $corPrincipal;
+	position: relative;
+	margin: 50px 0px;
+	&::before {
+		position: absolute;
+		content: "";
+		width: 100%;
+		height: 50px;
+		top: -49px;
+		left: 0;
+		background: url('../img/detail-top.png');
+		background-position: center top;
+		background-size: 100% 100%;
+	}
+	&::after {
+		position: absolute;
+		content: "";
+		width: 100%;
+		height: 50px;
+		bottom: -49px;
+		left: 0;
+		background-image: url('../img/detail-bottom.png');
+		background-position: center bottom;
+		background-size: 100% 100%;
+	}
+	h3.title-detail {
+		color: $corSecundaria;
+		text-transform: uppercase;
+		font-size: 30px;
+	}
+	.list-detail {
+		.single-detail {
+			border: solid 2px $corBranco;
+			color: $corBranco;
+			border-radius: 12px;
+			padding: 12px 15px;
+			margin: 15px 0px;
+			display: flex;
+			justify-content: center;
+			align-items: flex-start;
+			flex-direction: column;
+			.title-detail {
+				display: flex;
+				justify-content: flex-start;
+				.icon-detail {
+					font-size: 18px;
+					padding: 0px 7px;
+				}
+				h3 {
+					font-size: 18px;
+				}
+			}
+			.description-detail {
+				font-size: 15px;
+				flex-wrap: wrap;
+			}
+		}
+	}
+}
+@media screen and (max-width: $xsWidth) {
+	.section-detail {
+		h3.title-detail {
+			font-size: 20px;
+		}
+		.list-detail {
+			.single-detail {
+				.title-detail {
+					.icon-detail {
+						font-size: 10px;
+					}
+					h3 {
+						font-size: 12px;
+					}
+				}
+				.description-detail {
+					font-size: 10px;
+				}
+			}
+		}
+	}
+}
+@media screen and (min-width: $smWidth) and (max-width: $mdWidth) {
+	.section-detail {
+		h3.title-detail {
+			font-size: 20px;
+		}
+		.list-detail {
+			.single-detail {
+				.title-detail {
+					.icon-detail {
+						font-size: 13px;
+					}
+					h3 {
+						font-size: 15px;
+					}
+				}
+				.description-detail {
+					font-size: 12px;
+				}
+			}
+		}
+	}
+}
+@media screen and (min-width: $mdWidth) and (max-width: $lgWidth) {
+
+}
+@media screen and (min-width: $lgWidth) and (max-width: $xlWidth) {
+	
+}
+@media screen and (min-width: $xlWidth) {
+	
+}

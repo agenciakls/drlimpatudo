@@ -1,0 +1,40 @@
+.landing-resume {
+	padding: 15px 0px;
+	.resume-text {
+		font-size: 26px;
+		font-weight: bold;
+		text-align: justify;
+	}
+	.btn-resume {
+		margin: 15px 0px;
+		float: left;
+	}
+}
+@media screen and (max-width: $xsWidth) {
+	.landing-resume {
+		.resume-text {
+			font-size: 16px;
+			text-align: center;
+		}
+		.btn-resume {
+			float: none;
+			margin: 15px auto;
+		}
+	}
+}
+@media screen and (min-width: $smWidth) and (max-width: $mdWidth) {
+	.landing-resume {
+		.resume-text {
+			font-size: 18px;
+		}
+	}
+}
+@media screen and (min-width: $mdWidth) and (max-width: $lgWidth) {
+
+}
+@media screen and (min-width: $lgWidth) and (max-width: $xlWidth) {
+	
+}
+@media screen and (min-width: $xlWidth) {
+
+}

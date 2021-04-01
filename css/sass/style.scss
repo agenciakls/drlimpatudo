@@ -1,0 +1,57 @@
+/* Cores do Tema */
+$corPrincipal: #0B2E5A;
+$corPrincipalEscura: #011937;
+$corPrincipalEscuraDark: #011227;
+
+$corSecundaria: #FFDE00;
+$corSecundariaEscura: #C9AF00;
+
+$corTerceira: #00B5E7;
+$corTerceiraEscura: #009DC8;
+
+$corGrayPrincipal: #ECECEC;
+$corBranco: #ffffff;
+$corText: #292929;
+
+/* Tamanho das Telas */
+$xsWidth: 576px;
+$smWidth: 576px;
+$mdWidth: 768px;
+$lgWidth: 992px;
+$xlWidth: 1200px;
+
+/*Tamanho dos Textos */
+$xsTextMenu: 20px;
+
+
+@import 'classes';
+
+@import 'header';
+@import 'header-bar';
+@import 'header-search';
+@import 'menu';
+
+@import 'index';
+@import 'index-banner';
+@import 'index-info';
+@import 'index-services';
+@import 'index-biography';
+@import 'index-portfolio';
+@import 'index-detail';
+@import 'index-highlight';
+@import 'index-testimony';
+@import 'index-contact';
+
+
+@import 'page-news';
+@import 'page-services';
+
+@import 'landing-resume';
+@import 'landing-services';
+@import 'landing-atendimento';
+@import 'landing-clients';
+@import 'landing-portfolio';
+
+@import 'single';
+
+@import 'footer';

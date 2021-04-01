@@ -1,0 +1,44 @@
+.section-contact {
+	margin-top: 30px;
+	background-color: $corGrayPrincipal;
+	padding: 30px 0px;
+	.contact-title {
+		font-size: 40px;
+		padding: 5px 0px;
+	}
+	.contact-description {
+		padding: 5px 0px;
+		font-weight: normal;
+	}
+}
+@media screen and (max-width: $xsWidth) {
+	.section-contact {
+		padding: 10px 0px;
+		.contact-title {
+			font-size: 22px;
+		}
+		.contact-description {
+			font-size: 15px;
+		}
+	}
+}
+@media screen and (min-width: $smWidth) and (max-width: $mdWidth) {
+	.section-contact {
+		padding: 10px 0px;
+		.contact-title {
+			font-size: 30px;
+		}
+		.contact-description {
+			font-size: 18px;
+		}
+	}
+}
+@media screen and (min-width: $mdWidth) and (max-width: $lgWidth) {
+	
+}
+@media screen and (min-width: $lgWidth) and (max-width: $xlWidth) {
+	
+}
+@media screen and (min-width: $xlWidth) {
+	
+}

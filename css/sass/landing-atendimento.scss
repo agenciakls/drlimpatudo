@@ -1,0 +1,79 @@
+.landing-atendimento {
+	margin: 15px 0px;
+	.atendimento-head {
+		text-align: center;
+		font-size: 40px;
+		font-weight: 500;
+	}
+	.atendimento-text {
+		margin: 10px 0px;
+		font-weight: normal;
+		text-align: center;
+	}
+	.atendimento-box {
+		background-color: $corTerceira;
+		display: flex;
+		justify-content: flex-start;
+		text-align: center;
+		color: $corBranco;
+		flex-flow: column;
+		align-items: center;
+		margin: 10px 0px 10px;
+		padding: 15px 30px;
+		border-radius: 25px;
+		min-height: 330px;
+		a {
+			color: $corPrincipal;
+			font-weight: bold;
+			transition: all 0.2s ease;
+			&:hover {
+				color: $corBranco;
+			}
+		}
+		.atendimento-icon {
+			padding: 15px;
+			i {
+				font-size: 45px;
+			}
+		}
+		.atendimento-title {
+			line-height: 1.2;
+			font-size: 16px;
+			margin: 15px ​0px;
+			font-weight: bold;
+			text-transform: uppercase;
+		}
+		.atendimento-space {
+			font-size: 16px;
+			margin: 15px 0px;
+		}
+	} 
+}
+@media screen and (max-width: $xsWidth) {
+	.landing-atendimento {
+		.atendimento-head {
+			font-size: 20px;
+		}
+		.atendimento-text {
+			font-size: 15px;
+		}
+		.atendimento-box {
+			min-height: 290px;
+			.atendimento-space {
+				margin: 10px 0px;
+			}
+		} 
+	}
+}
+@media screen and (min-width: $smWidth) and (max-width: $mdWidth) {
+
+}
+@media screen and (min-width: $mdWidth) and (max-width: $lgWidth) {
+
+}
+@media screen and (min-width: $lgWidth) and (max-width: $xlWidth) {
+	
+}
+@media screen and (min-width: $xlWidth) {
+
+}

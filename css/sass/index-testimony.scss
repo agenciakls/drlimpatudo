@@ -1,0 +1,107 @@
+.section-testimony {
+	padding: 35px 0px 45px;
+	text-align: center;
+	clear: both;
+	h3.title-testimony {
+	    position: relative;
+	    text-align: left;
+	    font-size: 35px;
+	    z-index: 2;
+		color: $corPrincipal; 
+		text-transform: uppercase;
+		padding: 15px 0px;
+	}
+    .list-testimony {
+	    padding: 0px; 
+	    .single-testimony {
+			width: 50%;
+			min-width: 280px;
+			text-align: center;
+			.img-testimony {
+	    		img {
+					padding: 15px;
+					width: 100%;
+					max-width: 150px;
+	    		}
+	    	}
+	    	.text-testimony {
+				display: block;
+				background-color: $corPrincipal;
+				border-radius: 20px;
+				padding: 15px;
+				margin: 0px 15px;
+				min-height: 380px;
+				padding: 0px 15px;
+	    		.title-testimony {
+					color: $corBranco;
+					font-size: 26px;
+					font-weight: bold;
+					padding: 0px 0px;
+				}
+				.location-testimony {
+					color: $corSecundaria;
+					padding: 5px 0px; 
+				}
+				.content-testimony {
+					color: $corBranco;
+					font-size: 17px;
+				}
+	    	}
+	    }
+	}
+}
+@media screen and (max-width: $xsWidth) {
+	.section-testimony {
+		h3.title-testimony {
+			font-size: 20px;
+		}
+		.list-testimony {
+			.single-testimony {
+				width: 60%;
+				.text-testimony {
+					.title-testimony {
+						font-size: 20px;
+					}
+					.location-testimony {
+
+					}
+					.content-testimony {
+						font-size: 12px;
+					}
+				}
+			}
+		}
+	}
+}
+@media screen and (min-width: $smWidth) and (max-width: $mdWidth) {
+	.section-testimony {
+		h3.title-testimony {
+			font-size: 25px;
+		}
+		.list-testimony {
+			.single-testimony {
+				width: 60%;
+				.text-testimony {
+					.title-testimony {
+						font-size: 20px;
+					}
+					.location-testimony {
+
+					}
+					.content-testimony {
+						font-size: 12px;
+					}
+				}
+			}
+		}
+	}
+}
+@media screen and (min-width: $mdWidth) and (max-width: $lgWidth) {
+    
+}
+@media screen and (min-width: $lgWidth) and (max-width: $xlWidth) {
+    
+}
+@media screen and (min-width: $xlWidth) {
+    
+}

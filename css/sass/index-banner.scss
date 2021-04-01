@@ -1,0 +1,238 @@
+.home-topo {
+	display: flex;
+	.home-banner-bar {
+		position: relative;
+	    height: 100%;
+	    padding: 0px;
+	    background-color: $corBranco;
+	    z-index: 50;
+	    transition: all 0.3s ease;
+		ul {
+	    	// border: solid 1px #d6d6d6;
+			list-style-type: none;
+			padding-inline-start: 0px;
+			padding: 0px;
+	    	margin: 0px -15px;
+			li {
+				display: block;
+				&::before {
+					display: none;
+				}
+				a {
+					display: block;
+					font-size: 18px;
+					padding: 14px 10px;
+					// text-transform: uppercase;
+					transition: all 0.3s ease;
+					border-bottom: solid 1px $corPrincipalEscuraDark;
+					cursor: pointer;
+					border-bottom: solid 1px #d6d6d6;
+					line-height: normal !important;
+					font-family: 'Open Sans';
+					color: $corText;
+					font-weight: normal !important;
+					i {
+						color: $corPrincipal;
+					}
+				}
+				&:hover {
+					a {
+						background-color: $corPrincipal;
+						&, i {
+							color: $corBranco;
+						}
+					}
+				}
+				&.current_page_item {
+					a {
+						pointer-events: none;
+						background-color: $corPrincipalEscura;
+						&, i {
+							color: $corBranco;
+						}
+					}
+				}
+			}
+		}
+		&.active {
+			right: 0px;
+		}
+	}
+	.home-banner {
+		max-height: 370px;
+		min-height: 230px;
+		overflow: hidden;
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		display: block;
+		position: relative;
+		width: 100%;
+		& > img {
+			width: 100%;
+		}
+
+		.swiper-content {
+			overflow: hidden;
+			width: 100%;
+			height: 100%;
+			.swiper-wrapper {
+				height: 100%;
+				width: 100%;
+				.swiper-slide {
+					height: 100%;
+					width: 100%;
+					.banner-slide-single {
+						background-repeat: no-repeat;
+						background-size: cover;
+						background-position: center;
+						height: 100%;
+						width: 100%;
+						display: flex;
+						justify-content: center;
+						align-items: flex-end;
+
+					}
+				}
+			}
+		}
+		.content-banner {
+			width: 100%;
+			background: linear-gradient(0deg, rgba(11,46,90,0.95) 10%, transparent 100%);
+		}
+		.title-banner {
+			padding: 0px 0px;
+			font-size: 40px;
+			font-weight: bold;
+			color: $corBranco;
+		}
+		.description-banner {
+			padding: 10px 0px 20px;
+			font-size: 19px;
+			font-weight: bold;
+			color: $corSecundaria;
+		}
+		&.pages-banner {
+			min-height: 250px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background-color: $corPrincipal;
+			background-position: center;
+			background-size: cover;
+			h2 {
+				color: $corBranco;
+				font-size: 40px;
+			}
+		}
+	}
+}
+@media screen and (max-width: $xsWidth) {
+	.home-topo {
+		.home-banner-bar {
+			display: none;
+		}
+		.home-banner {
+			min-height: 200px;
+			& > img {
+				display: none;
+			}
+			.title-banner {
+				padding: 0px;
+				font-size: 22px;
+			}
+			.description-banner {
+				font-size: 9px;
+				padding: 10px 15px;
+			}
+		}
+	}
+}
+@media screen and (min-width: $smWidth) and (max-width: $mdWidth) {
+	.home-topo {
+		.home-banner-bar {
+			display: none;
+		}
+		.home-banner {
+			min-height: 280px;
+			.title-banner {
+				padding: 0px;
+				font-size: 25px;
+			}
+			.description-banner {
+				font-size: 12px;
+				padding: 10px 15px;
+			}
+		}
+	}
+}
+@media screen and (min-width: $mdWidth) and (max-width: $lgWidth) {
+	.home-topo {
+		.home-banner {
+			min-height: 350px;
+			.title-banner {
+				padding: 0px;
+				font-size: 28px;
+			}
+			.description-banner {
+				font-size: 14px;
+				padding: 10px 15px;
+			}
+		}	
+		.home-banner-bar {
+			ul {
+				li {
+					&::before {
+						padding: 10px;
+					}
+					a {
+						font-size: 15px;
+						padding: 8px 10px;
+					}
+				}
+			}
+		}
+	}
+}
+@media screen and (min-width: $lgWidth) and (max-width: $xlWidth) {
+	.home-topo {
+		.home-banner {
+			min-height: 365px;
+			.title-banner {
+				font-size: 35px;
+			}
+			.description-banner {
+				font-size: 17px;
+				padding: 10px 15px;
+			}
+		}	
+		.home-banner-bar {
+			ul {
+				li {
+					a {
+						font-size: 16px;
+					}
+				}
+			}
+		}
+	}
+}
+@media screen and (min-width: $xlWidth) {
+	.home-topo {
+		.home-banner {
+			min-height: 500px;
+			& > img {
+				display: none;
+			}
+		}
+		.home-banner-bar {
+			ul {
+				li {
+					a {
+						padding: 20px 10px;
+					}
+				}
+			}
+		}
+	}
+}
