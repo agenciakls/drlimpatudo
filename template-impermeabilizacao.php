@@ -12,7 +12,7 @@ get_header();
 				<img src="<?php echo get_bloginfo('template_url'); ?>/img/landing/higienizacao/sofa_higienizado.png" alt="" class="img-single">
 				</div>
 				<div class="col-md-6">
-					<div class="resume-text">Higienização através de lavagem a seco e impermeabilização de estofados como sofás, poltronas, puffs, cadeiras, colchões, tapetes, carpetes e etc.</div>
+					<div class="resume-text">O processo de impermeabilização consiste na aplicação de produtos específicos para cada tipo de superfície com o objetivo de criar uma camada de proteção contra ação da água e umidade.</div>
 					<a href="<?php echo InfoVar::show('whatsapp'); ?>" target="_blank"><button class="button-primary btn-resume" type="button">Eu Quero</button></a>
 				</div>
 			</div>
@@ -20,17 +20,8 @@ get_header();
 	</section>
 	<section class="landing-services">
 		<div class="container">
-			<h3 class="service-head">Nossos Serviços</h3>
+			<h3 class="service-head">Detalhes</h3>
 			<div class="row">
-				<div class="col-md-4">
-					<div class="single-service">
-						<div class="service-icon">
-							<img src="<?php echo get_bloginfo('template_url'); ?>/img/landing/higienizacao/icoon-sofa.png" width="60" alt="">
-						</div>
-						<div class="service-title">HIGIENIZAÇÃO</div>
-						<div class="service-text">É um processo de lavagem a seco que permite a limpeza completa do estofado, eliminando bactérias, fungos e sujeiras, deixando ele com aparência de novo e com um cheirinho agradável.</div>
-					</div>
-				</div>
 				<div class="col-md-4">
 					<div class="single-service">
 						<div class="service-icon">
@@ -38,6 +29,15 @@ get_header();
 						</div>
 						<div class="service-title">IMPERMEABILIZAÇÃO</div>
 						<div class="service-text">Aplicamos um produto sobre o tecido que cria uma camada que protege contra a ação da água, líquidos e umidade, possibilitando o aumento da vida útil do estofado.</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="single-service">
+						<div class="service-icon">
+							<img src="<?php echo get_bloginfo('template_url'); ?>/img/landing/higienizacao/icoon-sofa.png" width="60" alt="">
+						</div>
+						<div class="service-title">HIGIENIZAÇÃO</div>
+						<div class="service-text">É um processo de lavagem a seco que permite a limpeza completa do estofado, eliminando bactérias, fungos e sujeiras, deixando ele com aparência de novo e com um cheirinho agradável.</div>
 					</div>
 				</div>
 				<div class="col-md-4">
