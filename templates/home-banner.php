@@ -1,4 +1,4 @@
-<div class="home-section home-topo">
+<div class="home-section home-topo container">
 	<?php
 	date_default_timezone_set("America/Sao_Paulo");
 	$timeCurrent = (string) strftime('%Y-%m-%d %H:%M:%S', strtotime('now'));
@@ -19,20 +19,18 @@
 						<?php
 						while ($querySlide->have_posts()) {
 							$querySlide->the_post();
-							if ((get_field('validade') && get_field('validade') > $timeCurrent) || !get_field('validade')) {
 								$bannerImage = get_the_post_thumbnail_url(get_the_ID());
 								?>
 								<div class="swiper-slide">
 									<div class="banner-slide-single" style="background-image: url('<?php echo $bannerImage; ?>');">
-										<div class="content-banner">
+										<!-- <div class="content-banner">
 											<div class="container text-center">
 												<div class="title-banner"><?php echo get_the_title(); ?></div>
 												<div class="description-banner"><?php echo get_the_content(); ?></div>
 											</div>
-										</div>
+										</div> -->
 									</div>
 								</div><?php
-							}
 						}
 						?>
 					</div>

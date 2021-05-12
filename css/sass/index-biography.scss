@@ -1,57 +1,18 @@
 .section-biography {
 	position: relative;
-	margin: 50px 0px;
-	padding: 30px 0px;
+	margin: 20px 0px;
+	padding: 10px 0px;
 	color: $corBranco;
 	background-color: $corPrincipal;
-	&::before {
-		position: absolute;
-		content: "";
-		width: 100%;
-		height: 50px;
-		top: -49px;
-		left: 0;
-		background: url('../img/biography-top.png');
-		background-position: center top;
-		background-size: 100% 100%;
-	}
-	&::after {
-		position: absolute;
-		content: "";
-		width: 100%;
-		height: 50px;
-		bottom: -49px;
-		left: 0;
-		background-image: url('../img/biography-bottom.png');
-		background-position: center bottom;
-		background-size: 100% 100%;
-	}
 	.title-biography {
 		padding: 5px 0px;
 		text-transform: uppercase;
 		font-weight: bold;
-		font-size: 32px;
-		color: $corSecundaria;
-	}
-	.subtitle-biography {
-		padding: 5px 0px;
-		text-transform: uppercase;
-		font-weight: normal;
-		font-size: 20px;
-		color: $corSecundaria;
+		font-size: 4rem;
+		color: $corBranco;
 	}
 	.content-biography {
 		padding: 15px 0px;
-	}
-	.list-socials {
-		margin: 12px 0px;
-		text-align: center;
-	    .single-socials {
-		    display: inline-block;
-			padding: 10px 15px;
-			a {
-				color: $corBranco;
-			}
-		}
+		font-size: 1.5rem;
 	}
 }

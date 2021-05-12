@@ -2,11 +2,10 @@ footer {
 	background-size: cover;
 	background-position: center top;
 	padding: 25px 0px;
-	background-color: $corPrincipal;
+	background-color: $corSecundariaEscura;
 	color: $corBranco;
 	.footer-data { text-align: left; display: flex; }
 	.footer-about { 
-		text-align: right;
 		.footer-app {
 			display: flex;
 			justify-content: flex-end;
@@ -66,9 +65,7 @@ footer {
 			display: block;
 			.footer-contact {
 				display: inline-block;
-				background-color: $corBranco;
-				color: $corPrincipal;
-				padding: 10px 18px;
+				color: $corBranco;
 				margin: 5px 0px;
 				border-radius: 10px;
 				font-weight: normal;

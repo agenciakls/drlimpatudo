@@ -13,56 +13,25 @@
 						</div>
 					</div>
 				</div>
-				
-				<nav>
-					<?php 
-					if (has_nav_menu('principal')) {
-						wp_nav_menu( 
-							array( 
-								'theme_location' => 'principal', 
-								'menu_class' => 'header-menu',
-								'menu_id' => 'header-nav',
-								'container_class' => 'menu-principal-header', 
-								'container_id' => 'menu-principal-header' ,
-								'walker' => new OrganizacaoMenuPrincipal()
-							) 
-						);
-					}
-					?>
-				</nav>
-				<div class="pos-header">
-					<div id="pre-socials-container" class="pre-socials-container">
-						<ul id="pre-list-ul" class="pre-header-list">
-							<li id="nav-menu-item-6">
-								<a href="<?php echo InfoVar::show('facebook'); ?>" target="blank" class="menu-link main-menu-link">
-									<i class="fab fa-facebook-square"></i>
-								</a>
-							</li>
-							<li id="nav-menu-item-6">
-								<a href="<?php echo InfoVar::show('instagram'); ?>" target="blank" class="menu-link main-menu-link">
-									<i class="fab fa-instagram"></i>
-								</a>
-							</li>
-							<li id="nav-menu-item-6">
-								<a href="<?php echo InfoVar::show('youtube'); ?>" target="blank" class="menu-link main-menu-link">
-									<i class="fab fa-youtube"></i>
-								</a>
-							</li>
-						</ul>
-					</div>
-					<div id="pre-list-container" class="header-buttons">
-						<div class="header-list-buttons">
-							<a href="<?php echo InfoVar::show('whatsapp'); ?>" target="_blank">
-								<button class="button-whatsapp" type="button">
-									<i class="fab fa-whatsapp"></i> Mande um WhatsApp
-								</button>
-							</a>
-							<a href="<?php echo InfoVar::show('phone'); ?>" target="_blank">
-								<button class="button-call" type="button">
-									<i class="fas fa-phone"></i> Ou Ligue <?php echo InfoVar::show('showphoneshort'); ?>
-								</button>
-							</a>
+				<div class="box-header">
+					<div class="header-icons">
+						<div class="header-single-icon">
+							<a href=""><i class="fas fa-phone"></i> (21) 3331-8840</a>
 						</div>
+						<div class="header-single-icon">
+							<a href=""><i class="fab fa-whatsapp"></i> (21) 99177-9602</a>
+						</div>
+						<div class="header-single-icon">
+							<a href=""><i class="fas fa-envelope"></i> E-Mail</a>
+						</div>
+						<div class="header-single-icon">
+							<a href=""><i class="fas fa-question-circle"></i> Atendimento</a>
+						</div>
+					</div>
+					<div class="input-search">
+						<form action="">
+							<input type="text" class="search-field" name="s" value="" placeholder="Digite sua pesquisa"><button type="submit" class="search-button"><i class="fas fa-search"></i></button>
+						</form>
 					</div>
 				</div>
 			</div>

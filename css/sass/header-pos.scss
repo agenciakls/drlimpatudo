@@ -1,0 +1,111 @@
+.pos-header {
+    background-color: $corPrincipalEscura;
+    padding: 15px 0px;
+    .single-pos-header {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        .icon-pos-header {
+            padding: 0px 15px;
+            i {
+                color: $corSecundaria;
+            }
+        }
+        .content-pos-header {
+            .title-pos-header {
+                font-weight: bold;
+                color: $corSecundaria;
+            }
+            .data-pos-header, .data-pos-header a {
+                color: $corBranco;
+            }
+        }
+    }
+    
+	nav {
+		ul.header-menu {
+			display: flex;
+			margin: 0px !important;
+            justify-content: space-between;
+			li {
+				padding: 0px 10px;
+				font-weight: 500;
+				font-size: 15px;
+				font-weight: 700;
+				text-transform: uppercase;
+				a {
+					color: $corBranco;
+					transition: all 0.3s ease;
+					&:hover {
+						color: $corSecundariaEscura;
+					}
+				}
+				&.link-orcamento {
+					a { color: $corSecundaria; }
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: $xsWidth) {
+	.pos-header {
+        padding: 20px 0px;
+        background-color: $corGrayPrincipal;
+        text-align: center;
+        .single-pos-header {
+            width: auto;
+            text-align: center;
+            display: inline-block;
+            margin: 0px;
+            .icon-pos-header {
+                display: inline-block;
+                padding: 0px 2px;
+                i { color: $corPrincipal; font-size: 12px; }
+            }
+            .content-pos-header {
+                display: inline-block;
+                font-size: 12px;
+                .title-pos-header { display: none; }
+                .data-pos-header, .data-pos-header a {
+                    font-weight: bold;
+                    color: $corPrincipal;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: $smWidth) and (max-width: $mdWidth) {
+	.pos-header {
+        padding: 20px 0px;
+        background-color: $corGrayPrincipal;
+        text-align: center;
+        .single-pos-header {
+            width: auto;
+            text-align: center;
+            display: inline-block;
+            margin: 0px;
+            .icon-pos-header {
+                display: inline-block;
+                i { color: $corPrincipal; }
+            }
+            .content-pos-header {
+                display: inline-block;
+                .title-pos-header { display: none; }
+                .data-pos-header, .data-pos-header a {
+                    font-weight: bold;
+                    color: $corPrincipal;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: $mdWidth) and (max-width: $lgWidth) {
+    
+}
+@media screen and (min-width: $lgWidth) and (max-width: $xlWidth) {
+    
+}
+@media screen and (min-width: $xlWidth) {
+    
+}

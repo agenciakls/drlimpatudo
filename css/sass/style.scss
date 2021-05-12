@@ -1,10 +1,10 @@
 /* Cores do Tema */
-$corPrincipal: #0B2E5A;
-$corPrincipalEscura: #011937;
-$corPrincipalEscuraDark: #011227;
+$corPrincipal: #970000;
+$corPrincipalEscura: #710404;
+$corPrincipalEscuraDark: #5a0000;
 
-$corSecundaria: #FFDE00;
-$corSecundariaEscura: #C9AF00;
+$corSecundaria: #707070;
+$corSecundariaEscura: #333333;
 
 $corTerceira: #00B5E7;
 $corTerceiraEscura: #009DC8;
@@ -30,17 +30,17 @@ $xsTextMenu: 20px;
 @import 'header';
 @import 'header-bar';
 @import 'header-search';
+@import 'header-pos';
 @import 'menu';
 
 @import 'index';
 @import 'index-banner';
-@import 'index-info';
 @import 'index-services';
 @import 'index-biography';
-@import 'index-portfolio';
 @import 'index-detail';
-@import 'index-highlight';
 @import 'index-testimony';
+@import 'index-brands';
+@import 'index-types';
 @import 'index-contact';
 
 

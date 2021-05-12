@@ -2,40 +2,84 @@
 	<div class="container">
 		<div class="row ">
 			<div class="col-md-12">
-				<h3>SERVIÇOS</h3>
+				<h3 class="title">Balanças</h3>
 			</div>
 		</div>
 		<div class="list-services row">
 			<?php 
 			$listaServices = array(
 				array(
-					'img' => 'services-higienizacao.jpg',
-					'name' => 'HIGIENIZAÇÃO',
+					'img' => 'comercial.png',
+					'name' => 'Comercial',
 					'link' => InfoVar::show('higienizacao')
 				),
 				array(
-					'img' => 'services-sanitizacao.jpg',
-					'name' => 'SANITIZAÇÃO',
+					'img' => 'plataforma.png',
+					'name' => 'Plataforma',
 					'link' => InfoVar::show('sanitizacao')
 				),
 				array(
-					'img' => 'services-impermeabilizacao.jpg',
-					'name' => 'IMPERMEABILIZAÇÃO',
+					'img' => 'mecanica.png',
+					'name' => 'Mecanica',
 					'link' => InfoVar::show('impermeabilizacao')
 				),
 				array(
-					'img' => 'services-hidratacao.jpg',
-					'name' => 'HIDRATAÇÃO DE COURO',
+					'img' => 'antropometrica.png',
+					'name' => 'Antropométrica',
 					'link' => InfoVar::show('hidratacao')
 				),
 			);
 			foreach ($listaServices as $singleService) {
 				?>
-				<div class="col-md-6 col-6">
+				<div class="col-md-3 col-6">
 					<a href="<?php echo get_page_link($singleService['link']); ?>">
 						<div class="single-services">
-							<div class="img-services" style="background-image: url('<?php echo get_bloginfo('template_url') . '/img/' . $singleService['img']; ?>');">
-							</div>
+							<img src="<?php echo get_bloginfo('template_url') . '/img/icons/' . $singleService['img']; ?>" alt="" class="img-services">
+							<div class="title-services"><h3><?php echo $singleService['name']; ?></h3></div>
+						</div>
+					</a>
+				</div>
+				<?php
+			}
+			?>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row ">
+			<div class="col-md-12">
+				<h3 class="title">Equipamentos</h3>
+			</div>
+		</div>
+		<div class="list-services row">
+			<?php 
+			$listaServices = array(
+				array(
+					'img' => 'padaria.png',
+					'name' => 'Padaria',
+					'link' => InfoVar::show('higienizacao')
+				),
+				array(
+					'img' => 'acougue.png',
+					'name' => 'Açougue',
+					'link' => InfoVar::show('sanitizacao')
+				),
+				array(
+					'img' => 'restaurantes.png',
+					'name' => 'Restaurantes',
+					'link' => InfoVar::show('impermeabilizacao')
+				),
+				array(
+					'img' => 'supermercados.png',
+					'name' => 'Supermercados',
+					'link' => InfoVar::show('hidratacao')
+				),
+			);
+			foreach ($listaServices as $singleService) {
+				?>
+				<div class="col-md-3 col-6">
+					<a href="<?php echo get_page_link($singleService['link']); ?>">
+						<div class="single-services">
+							<img src="<?php echo get_bloginfo('template_url') . '/img/icons/' . $singleService['img']; ?>" alt="" class="img-services">
 							<div class="title-services"><h3><?php echo $singleService['name']; ?></h3></div>
 						</div>
 					</a>

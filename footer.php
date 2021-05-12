@@ -1,9 +1,73 @@
-    <footer>
+    <?php get_template_part('templates/footer', 'detail'); ?>
+	<footer>
 		<div class="container">
 			<div class="row">
+				<div class="col-md-2 d-none d-md-block footer-data">
+					<div class="element-footer">
+						<h3>Menu</h3>
+						<div class="footer-site">
+						<?php 
+						if (has_nav_menu( 'principal' )) {
+							wp_nav_menu( 
+								array( 
+									'theme_location' => 'principal', 
+									'menu_class' => 'header-menu',
+									'menu_id' => 'header-nav',
+									'container_class' => 'menu-principal-header', 
+									'container_id' => 'menu-principal-header' ,
+									'walker' => new OrganizacaoMenuPrincipal()
+								) 
+							);
+						}
+						?>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-md-2 d-none d-md-block footer-data">
+					<div class="element-footer">
+						<h3>Menu</h3>
+						<div class="footer-site">
+						<?php 
+						if (has_nav_menu( 'principal' )) {
+							wp_nav_menu( 
+								array( 
+									'theme_location' => 'principal', 
+									'menu_class' => 'header-menu',
+									'menu_id' => 'header-nav',
+									'container_class' => 'menu-principal-header', 
+									'container_id' => 'menu-principal-header' ,
+									'walker' => new OrganizacaoMenuPrincipal()
+								) 
+							);
+						}
+						?>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 footer-about">
+					<div class="element-footer list-contact">
+						<h3>FUNCIONAMENTO</h3>
+						<a href="<?php echo InfoVar::show('maps'); ?>" target="_blank">
+							<div class="footer-contact">
+								<i class="fas fa-map-marker-alt"></i> <?php echo InfoVar::show('location'); ?>
+							</div>
+						</a>
+						<a href="<?php echo InfoVar::show('phone'); ?>" target="_blank">
+							<div class="footer-contact">
+								<i class="fas fa-phone"></i> <?php echo InfoVar::show('showphone'); ?> / <?php echo InfoVar::show('showmobile'); ?>
+							</div>
+						</a>
+						<a href="<?php echo InfoVar::show('sendmail'); ?>" target="_blank">
+							<div class="footer-contact">
+								<i class="fas fa-envelope"></i> <?php echo InfoVar::show('email'); ?>
+							</div>
+						</a>
+					</div>
+				</div>
 				<div class="col-md-4">
 					<div class="logo-footer">
-						<img src="<?php echo get_bloginfo('template_url'); ?>/img/logo-white.png" alt="" class="img-footer img-fluid">
+						<img src="<?php echo get_bloginfo('template_url'); ?>/img/logo.png" alt="" class="img-footer img-fluid">
 					</div>
 					<div class="element-footer">
 						<h3 class="title-socials">Redes Sociais</h3>
@@ -26,47 +90,6 @@
 								</div>
 							</div>
 						</div>
-					</div>
-				</div>
-				<div class="col-md-2 d-none d-md-block footer-data">
-					<div class="element-footer">
-						<h3>Menu</h3>
-						<div class="footer-site">
-						<?php 
-						if (has_nav_menu( 'principal' )) {
-							wp_nav_menu( 
-								array( 
-									'theme_location' => 'principal', 
-									'menu_class' => 'header-menu',
-									'menu_id' => 'header-nav',
-									'container_class' => 'menu-principal-header', 
-									'container_id' => 'menu-principal-header' ,
-									'walker' => new OrganizacaoMenuPrincipal()
-								) 
-							);
-						}
-						?>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 footer-about">
-					<div class="element-footer list-contact">
-						<h3>CONTATOS</h3>
-						<a href="<?php echo InfoVar::show('maps'); ?>" target="_blank">
-							<div class="footer-contact">
-								<i class="fas fa-map-marker-alt"></i> <?php echo InfoVar::show('location'); ?>
-							</div>
-						</a>
-						<a href="<?php echo InfoVar::show('phone'); ?>" target="_blank">
-							<div class="footer-contact">
-								<i class="fas fa-phone"></i> <?php echo InfoVar::show('showphone'); ?> / <?php echo InfoVar::show('showmobile'); ?>
-							</div>
-						</a>
-						<a href="<?php echo InfoVar::show('sendmail'); ?>" target="_blank">
-							<div class="footer-contact">
-								<i class="fas fa-envelope"></i> <?php echo InfoVar::show('email'); ?>
-							</div>
-						</a>
 					</div>
 				</div>
 			</div>

@@ -68,6 +68,7 @@
 		display: block;
 		position: relative;
 		width: 100%;
+		margin: 15px 0px;
 		& > img {
 			width: 100%;
 		}
@@ -220,7 +221,7 @@
 @media screen and (min-width: $xlWidth) {
 	.home-topo {
 		.home-banner {
-			min-height: 500px;
+			min-height: 540px;
 			& > img {
 				display: none;
 			}

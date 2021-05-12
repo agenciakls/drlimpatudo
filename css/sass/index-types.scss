@@ -1,0 +1,38 @@
+.section-types {
+    .flex-types {
+        display: flex;
+        align-items: stretch;
+        .group-middle {
+            display: flex;
+            flex: 1 1 65%;
+            flex-wrap: wrap;
+            .box-small {
+                flex: 1 4 40%;
+            }
+            .box-medium {
+                flex: 1 6 60%;
+            }
+        }
+        .group-big {
+            flex: 1 1 35%;
+            display: flex;
+            flex-flow: wrap;
+            .box-big {
+                flex: 1 1 100%;
+                display: flex;
+            }
+        }
+        .box-single {
+            background-color: $corPrincipal;
+            background-size: contain;
+            background-position: left bottom;
+            background-repeat: no-repeat;
+            min-height: 250px;
+            margin: 15px;
+            flex: 1 1 100%;
+            color: white;
+            padding: 15px;
+        }
+        
+    }
+}

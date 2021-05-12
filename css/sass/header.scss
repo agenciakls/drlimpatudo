@@ -5,6 +5,7 @@ header {
 		background-color: $corPrincipal;
 		padding: 5px 0px;
 		width: 100%;
+		height: 110px;
 		&.fixed {
 			top: 0px;
 			position: fixed;
@@ -30,6 +31,40 @@ header {
 		}
 		.header-main {
 			z-index: 2;
+			.box-header {
+				padding: 10px 0px;
+				float: right;
+				.header-icons {
+					display: flex;
+					.header-single-icon {
+						a {
+							padding: 8px 15px;
+							color: $corBranco;
+						}
+					}
+				}
+			}
+			.input-search {
+				form {
+					display: flex;
+					.search-field {
+						margin: 7px 0px;
+						background-color: white;
+						padding: 7px 15px;
+						border-radius: 30px 0px 0px 30px;
+						border: none;
+					}
+					.search-button {
+						padding: 7px 15px;
+						margin: 7px 0px;
+						background-color: white;
+						color: $corPrincipalEscura;
+						border-radius:  0px 30px 30px 0px;
+						border-left: solid 2px $corPrincipalEscura;
+						
+					}
+				}
+			}
 		}
 		.nav-button {
 			float: right;
@@ -37,7 +72,7 @@ header {
 				display: none;
 			}
 			.hamburger {
-				padding: 30px 10px;
+				padding: 19px 10px;
 			}
 		}
 		.logo {
@@ -60,7 +95,6 @@ header {
 				font-size: 15px;
 				font-weight: 700;
 				border-left: 2px solid $corPrincipal;
-				margin: 30px 0px;
 				text-transform: uppercase;
 				a {
 					color: $corBranco;
@@ -157,16 +191,16 @@ section.content-title {
 		}
 	}
 	header {
-		height: 145px;
+		height: 65px;
 		.header-area {
 			padding: 0px !important;
-			height: 145px;
+			height: 65px;
 			.header-background {
 				opacity: 1;
 			}
 			.logo {
 				img {
-					height: 60px;
+					height: 40px;
 					margin: 14px 8px;
 				}
 			}
@@ -219,10 +253,10 @@ section.content-title {
 		}
 	}
 	header {
-		height: 145px;
+		height: 65px;
 		.header-area {
 			padding: 0px !important;
-			height: 145px;
+			height: 65px;
 			.header-background {
 				opacity: 1;
 			}
@@ -231,8 +265,8 @@ section.content-title {
 			}
 			.logo {
 				img {
-					height: 60px;
-					margin: 14px 8px;
+					height: 40px;
+					margin: 9px 8px;
 				}
 			}
 		}

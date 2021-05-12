@@ -75,4 +75,6 @@
 <body>
 	<?php get_template_part('templates/part', 'pre-header'); ?>
 	<?php get_template_part('templates/part', 'header'); ?>
+	<?php get_template_part('templates/part', 'pos-header'); ?>
 	<?php if (is_front_page()) { get_template_part('templates/home', 'banner'); } else { get_template_part('templates/header', 'title'); } ?>
+	
