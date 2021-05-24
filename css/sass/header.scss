@@ -110,7 +110,7 @@ header {
 		}
 	}
 }
-.pos-header {
+.pos-mobile {
 	display: flex;
     justify-content: space-between;
     align-items: center;
@@ -162,13 +162,14 @@ header {
 	}
 }
 section.content-title {
-	background-color: $corGrayPrincipal;
     padding: 15px 0px;
     h1 {
-    	font-size: 29px;
+    	font-size: 22px;
     	color: $corPrincipal;
 	    font-weight: bold;
 	    text-transform: uppercase;
+		border-bottom: solid 2px $corGrayPrincipal;
+		padding-bottom: 15px;
     }
 }
 @media screen and (max-width: $xsWidth) {
@@ -194,7 +195,11 @@ section.content-title {
 		height: 65px;
 		.header-area {
 			padding: 0px !important;
-			height: 65px;
+			.header-main {
+				.box-header {
+					display: none;
+				}
+			}
 			.header-background {
 				opacity: 1;
 			}
@@ -212,7 +217,7 @@ section.content-title {
 			display: none;
 		}
 	}
-	.pos-header {
+	.pos-mobile {
 		justify-content: center;
 		padding: 0px;
 		.header-buttons {
@@ -256,7 +261,6 @@ section.content-title {
 		height: 65px;
 		.header-area {
 			padding: 0px !important;
-			height: 65px;
 			.header-background {
 				opacity: 1;
 			}
@@ -269,12 +273,15 @@ section.content-title {
 					margin: 9px 8px;
 				}
 			}
+			.box-header {
+				display: none;
+			}
 		}
 		nav {
 			display: none;
 		}
 	}
-	.pos-header {
+	.pos-mobile {
 		justify-content: center;
 		.header-buttons {
 			.header-list-buttons {
@@ -289,9 +296,6 @@ section.content-title {
 	    	font-size: 32px;
 	    	text-align: center;
 	    }
-	}
-	nav.pos-header {
-		display: none;
 	}
 }
 @media screen and (min-width: $mdWidth) and (max-width: $lgWidth) {
@@ -318,7 +322,8 @@ section.content-title {
 			}
 		}
 	}
-	nav.pos-header {
+	.pos-mobile {
+		display: none;
 		ul.header-menu {
 			li {
 				padding: 11px 6px;
@@ -333,15 +338,12 @@ section.content-title {
 	}
 }
 @media screen and (min-width: $lgWidth) and (max-width: $xlWidth) {
-	nav.pos-header {
-		ul.header-menu {
-			li {
-				padding: 10px;
-				font-size: 17px;
-			}
-		}
+	.pos-mobile {
+		display: none;
 	}
 }
 @media screen and (min-width: $xlWidth) {
-	
+	.pos-mobile {
+		display: none;
+	}
 }

@@ -37,7 +37,7 @@
 					color: $corBranco;
 					transition: all 0.3s ease;
 					&:hover {
-						color: $corSecundariaEscura;
+						color: $corPrincipalClaro;
 					}
 				}
 				&.link-orcamento {
@@ -50,6 +50,7 @@
 
 @media screen and (max-width: $xsWidth) {
 	.pos-header {
+        display: none;
         padding: 20px 0px;
         background-color: $corGrayPrincipal;
         text-align: center;
@@ -77,6 +78,7 @@
 }
 @media screen and (min-width: $smWidth) and (max-width: $mdWidth) {
 	.pos-header {
+        display: none;
         padding: 20px 0px;
         background-color: $corGrayPrincipal;
         text-align: center;

@@ -8,7 +8,7 @@ get_header();
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12 form-contact">
-				<?php echo do_shortcode('[contact-form-7 id="116" title="Contato"]'); ?>
+				<?php echo do_shortcode('[contact-form-7 id="79" title="Contato"]'); ?>
 			</div>
 			<!--
 			<div class="col-md-6 info-contact">

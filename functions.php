@@ -4,24 +4,23 @@ require_once 'inc/load.php';
 /* Links */
 $argVar = array(
 
-	'facebook' => 'https://www.facebook.com/DrLimpaTudoRJ/',
-	'instagram' => 'https://www.instagram.com/drlimpatudorj/',
-    'youtube' => 'https://www.youtube.com/channel/UCvK1ARP6BQZ03c1XqBTxOAg?sub_confirmation=1',
+	'facebook' => '',
+	'instagram' => '',
+    'youtube' => '',
 
-    'sendmail' => 'mailto:contato@drlimpatudorj.com.br',
-    'email' => 'contato@drlimpatudorj.com.br',
+    'sendmail' => 'mailto:contato@realmaqbalancas.com.br',
+    'email' => 'contato@realmaqbalancas.com.br',
 
-    'whatsapp' => 'https://api.whatsapp.com/send?phone=5521968302337&text=Ol%C3%A1!%20Vim%20pelo%20Site!',
-    'phone' => 'tel:+552136138404',
-    'showphone' => '(21) 3613-8404',
-    'showphoneshort' => '3613-8404',
-    'showmobile' => '(21) 96830-2337',
-
+    'whatsapp' => '(21) 3331-8840',
+    'phone' => 'tel:',
+    'showphone' => '(21) 3331-8840',
+    'showphoneshort' => '3331-8840',
+    'showmobile' => '(21) 3331-8840',
     
-    'maps' => 'https://g.page/dr-limpa-tudo-rj?share',
-    'location' => 'Barra da Tijuca - RJ',
+    'maps' => '',
+    'location' => 'Rua Pedro Melo, 217 - Padre Miguel  - CEP: 21775410  Rio de Janeiro, RJ',
     
-    'operation' => 'Seg. - Sáb. 08:00 - 18:00',
+    'operation' => 'Seg. a Sex. : 8h às 19h | Sab. : 08h às 13h',
 
     'inicio' => 0,
     'higienizacao' => '76',

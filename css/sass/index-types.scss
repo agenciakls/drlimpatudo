@@ -32,6 +32,32 @@
             flex: 1 1 100%;
             color: white;
             padding: 15px;
+            .box-text {
+                width: 170px;
+                float: right;
+                .box-category {
+                    background-color: white;
+                    color: #970000;
+                    padding: 3px 9px;
+                    display: inline;
+                    font-size: 12px;
+                }
+                .box-title {
+                    font-size: 22px;
+                    margin: 7px 0px;
+                    line-height: 1.3;
+                }
+                button {
+                    background-color: transparent;
+                    color: white;
+                    border-bottom: solid 1px white;
+                    border-radius: 0px;
+                    text-align: left;
+                    padding: 3px 0px;
+                    margin: 0px;
+                    font-size: 15px;
+                }
+            }
         }
         
     }

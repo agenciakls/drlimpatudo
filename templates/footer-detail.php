@@ -1,8 +1,8 @@
 <section class="section section-button-call">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-6"><a href=""><button type="button" class="btn btn-primary">Chama a gente no WhatsApp</button></a></div>
-			<div class="col-md-6"><a href=""><button type="button" class="btn btn-primary">Chama a gente no WhatsApp</button></a></div>
+			<div class="col-md-6 text-center"><a href=""><div class="button-call"><div class="text">Chama a gente no WhatsApp</div><div class="icon"><img src="<?php echo get_bloginfo('template_url') . '/img/icons/whatsapp.png'; ?>" alt=""></div></div></a></div>
+			<div class="col-md-6 text-center"><a href=""><div class="button-call"><div class="text">Fale direto com o técnico</div><div class="icon"><img src="<?php echo get_bloginfo('template_url') . '/img/icons/tecnico.png'; ?>" alt=""></div></div></a></div>
 		</div>
 	</div>
 </section>
@@ -31,14 +31,14 @@
 				?>
 				<div class="col-md-4">
 					<div class="single-detail">
-						<div class="title-detail">
 							<div class="icon-detail">
 								<img src="<?php echo get_bloginfo('template_url') . '/img/icons/' . $singleService['img']; ?>" alt="" class="img-detail">
 							</div>
+						<div class="title-detail">
 							<h3><?php echo $singleService['name']; ?></h3>
-						</div>
-						<div class="description-detail">
-							<p><?php echo $singleService['description']; ?></p>
+							<div class="description-detail">
+								<p><?php echo $singleService['description']; ?></p>
+							</div>
 						</div>
 					</div>
 				</div>

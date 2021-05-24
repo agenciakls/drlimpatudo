@@ -1,4 +1,4 @@
-<section class="home-brands section">
+<section class="home-brands section-brands">
 	<div class="container">
 		<div class="content-brands">
 			<h1>MARCAS QUE TRABALHAMOS</h1>

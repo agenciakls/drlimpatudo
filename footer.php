@@ -2,7 +2,7 @@
 	<footer>
 		<div class="container">
 			<div class="row">
-				<div class="col-md-2 d-none d-md-block footer-data">
+				<div class="col-md-2 col-6 d-md-block footer-data">
 					<div class="element-footer">
 						<h3>Menu</h3>
 						<div class="footer-site">
@@ -24,7 +24,7 @@
 					</div>
 				</div>
 				
-				<div class="col-md-2 d-none d-md-block footer-data">
+				<div class="col-md-2 col-6 d-md-block footer-data">
 					<div class="element-footer">
 						<h3>Menu</h3>
 						<div class="footer-site">
@@ -48,19 +48,20 @@
 				<div class="col-md-4 footer-about">
 					<div class="element-footer list-contact">
 						<h3>FUNCIONAMENTO</h3>
-						<a href="<?php echo InfoVar::show('maps'); ?>" target="_blank">
-							<div class="footer-contact">
-								<i class="fas fa-map-marker-alt"></i> <?php echo InfoVar::show('location'); ?>
-							</div>
-						</a>
-						<a href="<?php echo InfoVar::show('phone'); ?>" target="_blank">
-							<div class="footer-contact">
-								<i class="fas fa-phone"></i> <?php echo InfoVar::show('showphone'); ?> / <?php echo InfoVar::show('showmobile'); ?>
-							</div>
-						</a>
+						<div class="footer-contact">
+							<a href="<?php echo InfoVar::show('phone'); ?>" target="_blank"><i class="fas fa-phone"></i> <?php echo InfoVar::show('showphone'); ?></a> <a href=""><i class="fab fa-whatsapp"></i> <?php echo InfoVar::show('showmobile'); ?></a>
+						</div>
+						<div class="footer-contact">
+							<i class="far fa-clock"></i> <?php echo InfoVar::show('operation'); ?>
+						</div>
 						<a href="<?php echo InfoVar::show('sendmail'); ?>" target="_blank">
 							<div class="footer-contact">
 								<i class="fas fa-envelope"></i> <?php echo InfoVar::show('email'); ?>
+							</div>
+						</a>
+						<a href="<?php echo InfoVar::show('maps'); ?>" target="_blank">
+							<div class="footer-contact">
+								<i class="fas fa-map-marker-alt"></i> <?php echo InfoVar::show('location'); ?>
 							</div>
 						</a>
 					</div>

@@ -4,15 +4,99 @@
 	padding: 10px 0px;
 	color: $corBranco;
 	background-color: $corPrincipal;
-	.title-biography {
-		padding: 5px 0px;
-		text-transform: uppercase;
-		font-weight: bold;
-		font-size: 4rem;
-		color: $corBranco;
+	.box-biography {
+		.title-biography {
+			padding: 5px 0px;
+			text-transform: uppercase;
+			font-weight: bold;
+			font-size: 4rem;
+			color: $corBranco;
+		}
+		.content-biography {
+			padding: 15px 0px;
+			font-size: 1.5rem;
+		}
+		.about-figure {
+			margin: -35px 0px;
+		}
 	}
-	.content-biography {
-		padding: 15px 0px;
-		font-size: 1.5rem;
+	.background-biography {
+		position: absolute;
+		height: 100%;
+		width: calc(50% - 250px);
+		top: 0px;
+		right: 0px;
+		background-image: url('../img/about-background.png');
+		background-position: right center;
+		background-size: cover;
+		background-repeat: no-repeat;
 	}
+}
+
+@media screen and (max-width: $xsWidth) {
+	.section-biography {
+		.box-biography {
+			.title-biography {
+				font-size: 1.8rem;
+			}
+			.content-biography {
+				font-size: 1rem;
+			}
+			.about-figure {
+				margin: 5px 0px -35px;
+			}
+		}
+	}
+}
+@media screen and (min-width: $smWidth) and (max-width: $mdWidth) {
+	.section-biography {
+		.box-biography {
+			.title-biography {
+				font-size: 1rem;
+			}
+			.content-biography {
+				font-size: 0.75rem;
+			}
+			.about-figure {
+				margin: 5px 0px -35px;
+			}
+		}
+		.background-biography {
+			width: calc(50% - 115px);
+		}
+	}
+}
+@media screen and (min-width: $mdWidth) and (max-width: $lgWidth) {
+	.section-biography {
+		.box-biography {
+			.title-biography {
+				font-size: 1.6rem;
+			}
+			.content-biography {
+				font-size: 1rem;
+			}
+		}
+		.background-biography {
+			width: calc(50% - 150px);
+		}
+	}
+}
+@media screen and (min-width: $lgWidth) and (max-width: $xlWidth) {
+	
+	.section-biography {
+		.box-biography {
+			.title-biography {
+				font-size: 2rem;
+			}
+			.content-biography {
+				font-size: 1.1rem;
+			}
+		}
+		.background-biography {
+			width: calc(50% - 220px);
+		}
+	}
+}
+@media screen and (min-width: $xlWidth) {
+	
 }

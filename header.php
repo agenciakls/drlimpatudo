@@ -18,7 +18,7 @@
 	<?php
 	if (is_front_page()) {
 		?>
-		<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css" async>
+		<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 		<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" async>
 		<?php
 	}

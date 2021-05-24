@@ -2,7 +2,7 @@
 * { margin: 0px; word-wrap: break-word; -webkit-font-smoothing: antialiased; }
 body, html { margin: 0px; padding: 0px; font-family: 'Open Sans', Arial; }
 body { background-color: $corBranco; color: $corPrincipal; /* margin-top: 100px; */ }
-a, a:hover, a:active, a:focus, a:visited { cursor: pointer; text-decoration: none; color: $corTerceira; }
+a, a:hover, a:active, a:focus, a:visited { cursor: pointer; text-decoration: none; color: $corBranco; }
 
 /* TÍTULOS E TEXTOS */
 main { 
@@ -60,13 +60,13 @@ input[type=button], input[type=submit], input[type=reset], button {
     border: none;
     margin: 5px;
     padding: 10px 20px;
-    color: $corSecundaria;
+    color: $corBranco;
     text-align: center;
     text-transform: uppercase;
     font-size: 20px;
     cursor: pointer;
     transition: ease 0.3s all;
-    border-radius: 30px;
+    border-radius: 7px;
     &:hover {
         background-color: $corPrincipalEscura;
     }
@@ -81,7 +81,7 @@ input[type=button], input[type=submit], input[type=reset], button {
 }
 .button-primary, .button-secundary {
     display: block;
-    border-radius: 40px;
+    border-radius: 7px;
     padding: 8px 40px;
     margin: 22px auto;
     font-weight: bold;
@@ -91,7 +91,7 @@ input[type=button], input[type=submit], input[type=reset], button {
 }
 .button-primary {
     background-color: $corPrincipal;
-    color: $corSecundaria;
+    color: $corBranco;
     &:hover {
         background-color: $corPrincipalEscura;
     }
@@ -212,7 +212,7 @@ img.aligncenter { display: block; margin-left: auto; margin-right: auto; }
 }
 
 @media screen and (max-width: $xsWidth) {
-    h1 { font-size: 30px; }
+    h1 { font-size: 1.1rem; }
     .button-primary, .button-secundary {
         padding: 11px 40px;
         margin: 1px auto;
@@ -220,6 +220,7 @@ img.aligncenter { display: block; margin-left: auto; margin-right: auto; }
     }
 }
 @media screen and (min-width: $smWidth) and (max-width: $mdWidth) {
+    h1 { font-size: 1.1rem; }
     .button-primary, .button-secundary {
         padding: 11px 40px;
         margin: 8px auto;

@@ -15,15 +15,15 @@
 			justify-content: center;
 			align-items: center;
 			flex-direction: column;
+			.icon-detail {
+				.img-detail {
+					width: 70px;
+					margin: 15px;
+					color: white;
+				}
+			}
 			.title-detail {
 				text-align: center;
-				.icon-detail {
-					.img-detail {
-						width: 70px;
-						margin: 15px;
-						color: white;
-					}
-				}
 				h3 {
 					margin: 10px 0px;
 					font-size: 21px;
@@ -44,7 +44,10 @@
 		}
 		.list-detail {
 			.single-detail {
+				flex-direction: row;
+				justify-content: space-between;
 				.title-detail {
+					text-align: left;
 					.icon-detail {
 						font-size: 10px;
 					}
@@ -66,6 +69,8 @@
 		}
 		.list-detail {
 			.single-detail {
+				flex-direction: row;
+				justify-content: space-between;
 				.title-detail {
 					.icon-detail {
 						font-size: 13px;

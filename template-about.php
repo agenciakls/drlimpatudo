@@ -8,27 +8,22 @@ get_header();
 	<div class="container">
 		<div class="box-biography">
 			<section class="row">
-				<div class="col-md-6">
+				<div class="col-md-12">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="content-section">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi magna felis, sollicitudin pulvinar ornare ut, molestie vitae tortor. Suspendisse facilisis ex non metus eleifend dignissim. Etiam imperdiet est vitae orci tincidunt lobortis ut aliquam orci. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer nec feugiat lorem, et lobortis augue. Donec et venenatis ipsum. Curabitur laoreet ac enim quis consequat. Nullam egestas ultricies mauris, ac hendrerit ligula sollicitudin vitae. Duis tincidunt interdum leo, ut cursus dolor tempor eget. Donec eu diam imperdiet, viverra ipsum vel, congue magna. Morbi molestie lorem mi.</p><br />
+								<p>Nam accumsan leo nec orci tempus luctus. Praesent accumsan quis leo vel aliquam. Nulla facilisi. Suspendisse nec diam sed odio laoreet accumsan sit amet lacinia lectus. Phasellus venenatis diam id scelerisque sagittis. Integer id accumsan sem. Cras sit amet mauris et purus venenatis consequat. Fusce orci purus, blandit quis volutpat ac, pretium non mauris. Donec tristique lacinia turpis eu porttitor.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-md-12">
 					<div class="about-figure">
 						<div class="image-figure img-circle" style="background-image: url('<?php echo get_bloginfo('template_url'); ?>/img/img-biography.jpg');" alt="">
 						</div>
 						<img src="<?php echo get_bloginfo('template_url'); ?>/img/img-biography.jpg" class="img-fluid" alt="">
-					</div>
-				</div>
-				<div class="col-md-6">
-					<div class="row">
-						<div class="col-md-12">
-							<div class="title-section">
-								<h3>
-									Dr Limpa Tudo
-								</h3>
-							</div>
-						</div>
-						<div class="col-md-12">
-							<div class="content-section">
-								<p>O Dr Limpa Tudo foi criado com o objetivo de acabar com os inimigos do seus móveis e levar para sua casa bem estar, conforto, limpeza, qualidade de vida! O Dr Limpa tudo acredita que um ambiente limpo, higienizado e bem conservado é muito mais prazeroso de se viver, muito mais confortável e propício à busca da felicidade. Traz também paz de espírito e tranquilidade para todos!</p>
-						</div>
-						</div>
 					</div>
 				</div>
 			</section>

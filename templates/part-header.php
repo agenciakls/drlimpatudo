@@ -34,6 +34,22 @@
 						</form>
 					</div>
 				</div>
+				<div class="pos-mobile">
+					<div id="pre-list-container" class="header-buttons">
+						<div class="header-list-buttons">
+							<a href="<?php echo InfoVar::show('whatsapp'); ?>" target="_blank">
+								<button class="button-whatsapp" type="button">
+									<i class="fab fa-whatsapp"></i> Mande um WhatsApp
+								</button>
+							</a>
+							<a href="<?php echo InfoVar::show('phone'); ?>" target="_blank">
+								<button class="button-call" type="button">
+									<i class="fas fa-phone"></i> Ou Ligue <?php echo InfoVar::show('showphoneshort'); ?>
+								</button>
+							</a>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
