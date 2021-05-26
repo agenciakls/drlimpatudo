@@ -22,7 +22,7 @@
 				padding: 15px 15px;
 				h3 {
 					text-transform: uppercase;
-					font-size: 24px;
+					font-size: 16px;
 					font-weight: bold;
 				}		
 			}
@@ -39,7 +39,7 @@
 				}
 				.title-services {
 					h3 {
-						font-size: 9px;
+						font-size: 11px;
 						font-weight: bold;
 					}
 				}
@@ -59,7 +59,17 @@
 	}
 }
 @media screen and (min-width: $mdWidth) and (max-width: $lgWidth) {
-
+	.section-services {
+		.list-services {
+			.single-services {
+				.title-services {
+					h3 {
+						font-size: 12px;
+					}		
+				}
+			}
+		}
+	}
 }
 @media screen and (min-width: $lgWidth) and (max-width: $xlWidth) {
 	

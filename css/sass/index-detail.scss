@@ -45,7 +45,12 @@
 		.list-detail {
 			.single-detail {
 				flex-direction: row;
-				justify-content: space-between;
+				justify-content: flex-start;
+				.icon-detail {
+					.img-detail {
+						width: 40px;
+					}
+				}
 				.title-detail {
 					text-align: left;
 					.icon-detail {
@@ -53,10 +58,12 @@
 					}
 					h3 {
 						font-size: 12px;
+						text-align: left;
 					}
 				}
 				.description-detail {
 					font-size: 10px;
+					text-align: left;
 				}
 			}
 		}
@@ -70,16 +77,18 @@
 		.list-detail {
 			.single-detail {
 				flex-direction: row;
-				justify-content: space-between;
+				justify-content: flex-start;
 				.title-detail {
 					.icon-detail {
 						font-size: 13px;
 					}
 					h3 {
 						font-size: 15px;
+						text-align: left;
 					}
 				}
 				.description-detail {
+					text-align: left;
 					font-size: 12px;
 				}
 			}

@@ -114,7 +114,7 @@
 
     <!-- FUNCTIONS -->
     <script src="<?php bloginfo('template_url'); ?>/js/functions.js?v=1.1.21"></script>
-	<?php if (is_front_page()) { ?><script src="<?php bloginfo('template_url'); ?>/js/home.js?v=1.1.2"></script><?php }?>
+	<?php if (is_front_page()) { ?><script src="<?php bloginfo('template_url'); ?>/js/home.js?v=1.1.3"></script><?php }?>
 
 	<!-- GOOGLE ADS -->
 	<script>

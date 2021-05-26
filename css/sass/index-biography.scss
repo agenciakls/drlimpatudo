@@ -37,14 +37,17 @@
 	.section-biography {
 		.box-biography {
 			.title-biography {
-				font-size: 1.8rem;
+				font-size: 1rem;
 			}
 			.content-biography {
-				font-size: 1rem;
+				font-size: 0.5rem;
 			}
 			.about-figure {
 				margin: 5px 0px -35px;
 			}
+		}
+		.background-biography {
+			width: calc(50% - 115px);
 		}
 	}
 }
@@ -62,7 +65,7 @@
 			}
 		}
 		.background-biography {
-			width: calc(50% - 115px);
+			width: 28%;
 		}
 	}
 }

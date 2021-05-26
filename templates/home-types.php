@@ -29,7 +29,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="box-medium">
+                <div class="box-medium mob-none">
                     <div class="box-single" style="background-image: url('<?php echo get_bloginfo('template_url'); ?>/img/home/restaurantes.png');">
                         <div class="box-text">
                             <div class="box-category">Conserto e Manutenção</div>
@@ -40,6 +40,16 @@
                 </div>
             </div>
             <div class="group-big">
+                
+                <div class="box-medium desk-none">
+                    <div class="box-single" style="background-image: url('<?php echo get_bloginfo('template_url'); ?>/img/home/restaurantes.png');">
+                        <div class="box-text">
+                            <div class="box-category">Conserto e Manutenção</div>
+                            <div class="box-title">Maquinário para <strong>Padaria</strong></div>
+                            <button>Saiba Mais</button>
+                        </div>
+                    </div>
+                </div>
                 <div class="box-big">
                     <div class="box-single" style="background-image: url('<?php echo get_bloginfo('template_url'); ?>/img/home/hospitalares.png');">
                         <div class="box-text">
