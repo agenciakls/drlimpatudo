@@ -1,11 +1,4 @@
-<section class="section section-button-call">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-6 text-center"><a href=""><div class="button-call"><div class="text">Chama a gente no WhatsApp</div><div class="icon"><img src="<?php echo get_bloginfo('template_url') . '/img/icons/whatsapp.png'; ?>" alt=""></div></div></a></div>
-			<div class="col-md-6 text-center"><a href=""><div class="button-call"><div class="text">Fale direto com o técnico</div><div class="icon"><img src="<?php echo get_bloginfo('template_url') . '/img/icons/tecnico.png'; ?>" alt=""></div></div></a></div>
-		</div>
-	</div>
-</section>
+<?php echo get_template_part('templates/component', 'buttons'); ?>
 <section class="section section-detail">
 	<div class="container">
 		<div class="list-detail row">
@@ -29,8 +22,7 @@
 			);
 			foreach ($listaServices as $singleService) {
 				?>
-				<div class="col-md-4">
-					<div class="single-detail">
+				<div class="col-md-4 single-detail">
 							<div class="icon-detail">
 								<img src="<?php echo get_bloginfo('template_url') . '/img/icons/' . $singleService['img']; ?>" alt="" class="img-detail">
 							</div>
@@ -40,7 +32,6 @@
 								<p><?php echo $singleService['description']; ?></p>
 							</div>
 						</div>
-					</div>
 				</div>
 				<?php
 			}

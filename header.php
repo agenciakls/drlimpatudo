@@ -7,14 +7,13 @@
     <!-- META -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1"/>
-	<meta name="description" content="Dr Limpa Tudo é uma empresa de limpeza que presta serviço no Rio de Janeiro. Com serviços de Higienização, Sanitização, Impermeabilização e Hidratação de couro, ela conta com serviços completos de limpeza.">
-	<meta name="keywords" content="Dr Limpa Tudo, Higienização, Hidração de Couro, Limpeza de Sofá, Sanitização, Impermeabilização, Lavagem de Sofá, Lavagem a Seco, Limpeza Completa, Desinfecção, Limpeza de Veículos, Higienização de Veículos">
 
     <!-- ESTILOS -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" async>
 	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/style.css?v=1.0.5" async>
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i" rel="stylesheet" async>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" async>
+    <link rel="stylesheet" href="<?php echo get_bloginfo('template_url'); ?>/css/fontawesome.min.css" >
+	<link rel="stylesheet" href="<?php echo get_bloginfo('template_url'); ?>/css/all.min.css" >
 	<?php
 	if (is_front_page()) {
 		?>
@@ -23,22 +22,34 @@
 		<?php
 	}
 	?>
-    
-	<link rel="shortcut icon" type="image/x-icon" href="<?php echo get_bloginfo('template_url'); ?>/img/logo-favicon.png"> 
-    
-    <!-- Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-123566709-5"></script>
-	<script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'UA-123566709-5'); </script>
+	<link rel="shortcut icon" type="image/x-icon" href="<?php echo get_bloginfo('template_url'); ?>/img/favicon.png"> 
+	<?php 
+	if (InfoVar::show('ga_analytics')) {
+		?>
+		<!-- Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=<?php echo InfoVar::show('ga_analytics'); ?>"></script>
+		<script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', '<?php echo InfoVar::show('ga_analytics'); ?>'); </script>
+		<?php
+	}
+	if (InfoVar::show('ga_ads')) {
+		?>
+		<!-- Google Ads-->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=<?php echo InfoVar::show('ga_ads'); ?>"></script>
+		<script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', '<?php echo InfoVar::show('ga_ads'); ?>'); </script>
+		<?php
+	}
+	if (InfoVar::show('fb_app_id') && InfoVar::show('fb_admins')) {
+		?>
+		
+		<!-- Facebook -->
+		<div id="fb-root"></div>
+		<script async defer crossorigin="anonymous" src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v7.0&appId=<?php echo InfoVar::show('fb_app_id'); ?>&autoLogAppEvents=1" nonce="b4ioWcSu"></script>
+		<meta property="fb:app_id" content="<?php echo InfoVar::show('fb_app_id'); ?>" />
+		<meta property="fb:admins" content="<?php echo InfoVar::show('fb_admins'); ?>"/>
+		<?php
+	}
+	?>
 
-	<!-- Google Ads-->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=AW-687319088"></script>
-	<script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-687319088'); </script>
-
-	<!-- Facebook -->
-	<div id="fb-root"></div>
-	<script async defer crossorigin="anonymous" src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v7.0&appId=278603560113738&autoLogAppEvents=1" nonce="b4ioWcSu"></script>
-	<meta property="fb:app_id" content="278603560113738" />
-	<meta property="fb:admins" content="100003466640029"/>
 	
 	<!-- SCHEMA -->
 	<script type="application/ld+json"> { "@context" : "http://schema.org", "@type" : "Organization", "name" : "Dr Limpa Tudo", "url" : "https://www.drlimpatudorj.com.br", "sameAs" : [ "https://www.facebook.com/DrLimpaTudoRJ/", "https://www.instagram.com/drlimpatudorj/", "https://www.youtube.com/channel/UCvK1ARP6BQZ03c1XqBTxOAg?sub_confirmation=1",  ], "address": { "@type": "PostalAddress", "streetAddress": "Av. Alm. Júlio de Sá Bierrenbach, 65 - Bloco 1, Sala 320 - Barra da Tijuca, Rio de Janeiro - RJ, 22775-028", "addressRegion": "CA", "postalCode": "22775028", "addressCountry": "BR" } } </script>
@@ -47,6 +58,8 @@
 	if (is_single() || is_page()) {
 		$postCurrent = get_post(get_the_id());
 		?>
+		<meta name="description" content="<?php echo $postCurrent->post_excerpt; ?>">
+		<meta name="keywords" content="<?php echo wp_title('-'); ?>">
 		<meta property="og:locale" content="pt_BR">
 		<meta property="og:url" content="<?php echo get_the_permalink(); ?>">
 		<meta property="og:title" content="<?php echo wp_title('-'); ?>">
@@ -69,8 +82,8 @@
 		<meta property="article:published_time" content="<?php echo get_the_date(); ?>">
 		<?php  
 	}
+	wp_head();
 	?>
-	<?php wp_head(); ?>
 </head>
 <body>
 	<?php get_template_part('templates/part', 'pre-header'); ?>

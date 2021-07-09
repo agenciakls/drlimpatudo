@@ -15,6 +15,9 @@
 		.content-biography {
 			padding: 15px 0px;
 			font-size: 1.5rem;
+			p {
+				color: $corBranco;
+			}
 		}
 		.about-figure {
 			margin: -35px 0px;
@@ -40,7 +43,8 @@
 				font-size: 1rem;
 			}
 			.content-biography {
-				font-size: 0.5rem;
+				font-size: 0.7rem;
+				p { margin: 0px; }
 			}
 			.about-figure {
 				margin: 5px 0px -35px;

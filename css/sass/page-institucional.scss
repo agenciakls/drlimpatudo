@@ -1,0 +1,28 @@
+.page-institucional {
+	.box-institucional {
+		.single-institucional {
+			margin: 20px 0px;
+			&:nth-child(even) {
+				flex-direction: row-reverse;
+			}
+			img {
+				padding: 0px 65px;
+			}
+		}
+	}
+}
+@media screen and (max-width: $xsWidth) {
+
+}
+@media screen and (min-width: $smWidth) and (max-width: $mdWidth) {
+	
+}
+@media screen and (min-width: $mdWidth) and (max-width: $lgWidth) {
+
+}
+@media screen and (min-width: $lgWidth) and (max-width: $xlWidth) {
+	
+}
+@media screen and (min-width: $xlWidth) {
+	
+}

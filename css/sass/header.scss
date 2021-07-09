@@ -58,9 +58,9 @@ header {
 						padding: 7px 15px;
 						margin: 7px 0px;
 						background-color: white;
-						color: $corPrincipalEscura;
+						color: $corPrincipal;
 						border-radius:  0px 30px 30px 0px;
-						border-left: solid 2px $corPrincipalEscura;
+						border-left: solid 2px $corPrincipal;
 						
 					}
 				}
@@ -130,14 +130,14 @@ header {
 				font-weight: bold;
 			}
 			.button-whatsapp {
-				background-color: #5CB85C;
+				background-color: transparent;
 				color: $corBranco;
-				border: solid 2px #C2D8C2;
+				border: solid 2px $corBranco;
 			}
 			.button-call {
 				background-color: transparent !important;
-				color: $corSecundaria;
-				border: solid 2px $corSecundaria;
+				color: $corBranco;
+				border: solid 2px $corBranco;
 			}
 		}
 	}
@@ -164,11 +164,11 @@ header {
 section.content-title {
     padding: 15px 0px;
     h1 {
-    	font-size: 22px;
+    	font-size: 28px;
     	color: $corPrincipal;
 	    font-weight: bold;
 	    text-transform: uppercase;
-		border-bottom: solid 2px $corGrayPrincipal;
+		border-bottom: solid 2px#d0d0d0;
 		padding-bottom: 15px;
     }
 }
@@ -192,8 +192,9 @@ section.content-title {
 		}
 	}
 	header {
-		height: 65px;
+		height: 110px;
 		.header-area {
+			position: fixed;
 			padding: 0px !important;
 			.header-main {
 				.box-header {
@@ -212,6 +213,11 @@ section.content-title {
 			.header-search {
 				display: none;
 			}
+			.nav-button {
+				.hamburger {
+					padding: 15px 10px;
+				}
+			}
 		}
 		nav {
 			display: none;
@@ -225,7 +231,7 @@ section.content-title {
 				.button-whatsapp, .button-call {
 					border-width: 1px;
 					font-size: 9px;
-					margin: 5px 3px;
+					margin: 0px 3px; 
 					padding: 10px 15px;
 				}
 			}
@@ -258,8 +264,9 @@ section.content-title {
 		}
 	}
 	header {
-		height: 65px;
+		height: 110px;
 		.header-area {
+			position: fixed;
 			padding: 0px !important;
 			.header-background {
 				opacity: 1;
@@ -276,6 +283,11 @@ section.content-title {
 			.box-header {
 				display: none;
 			}
+			.nav-button {
+				.hamburger {
+					padding: 15px 10px;
+				}
+			}
 		}
 		nav {
 			display: none;
@@ -286,6 +298,7 @@ section.content-title {
 		.header-buttons {
 			.header-list-buttons {
 				.button-whatsapp, .button-call {
+					margin: 0px 3px; 
 					border-width: 1px;
 				}
 			}
@@ -301,14 +314,29 @@ section.content-title {
 @media screen and (min-width: $mdWidth) and (max-width: $lgWidth) {
 	header { 
 		.header-area {
+			height: auto;
+			.header-main {
+				.box-header {
+					.header-icons {
+						justify-content: center;
+					}
+				}
+			}
 			.nav-button {
 				.hamburger {
 					padding: 30px 2px;
 				}
 			}
 			.logo {
+				float: none;
+				text-align: center;
 				img {
 					padding: 2px 10px;
+				}
+			}
+			.header-main {
+				.box-header {
+					float: none;
 				}
 			}
 			

@@ -1,0 +1,64 @@
+.component-button-call {
+	.button-call {
+		max-width: 310px;
+		background-color: $corPrincipal;
+		border-radius: 7px;
+		display: flex;
+		justify-content: space-between;
+		align-items: stretch;
+		margin: 7px auto;
+		.text {
+			color: $corBranco;
+			padding: 15px;
+			width: 100%;
+            font-size: 16px;
+		}
+		.icon {
+			background-color: $corPrincipalEscura;
+			border-radius: 0px 7px 7px 0px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			padding: 0px 15px;
+			img {
+				width: 30px;
+			}
+		}
+	}
+    &.gray {
+        .button-call {
+            background-color: #707070;
+            .text {
+                color: $corBranco;
+            }
+            .icon {
+                background-color: #333333;
+            }
+        }
+    }
+}
+@media screen and (max-width: $xsWidth) {
+	.section-button-call {
+		.button-call {
+			font-size: 13px;
+			margin: 13px auto;
+		}
+	}
+}
+@media screen and (min-width: $smWidth) and (max-width: $mdWidth) {
+	.section-button-call {
+		.button-call {
+			font-size: 13px;
+			margin: 13px auto;
+		}
+	}
+}
+@media screen and (min-width: $mdWidth) and (max-width: $lgWidth) {
+
+}
+@media screen and (min-width: $lgWidth) and (max-width: $xlWidth) {
+	
+}
+@media screen and (min-width: $xlWidth) {
+	
+}

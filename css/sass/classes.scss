@@ -1,8 +1,14 @@
 /* GLOBAL */
 * { margin: 0px; word-wrap: break-word; -webkit-font-smoothing: antialiased; }
 body, html { margin: 0px; padding: 0px; font-family: 'Open Sans', Arial; }
-body { background-color: $corBranco; color: $corPrincipal; /* margin-top: 100px; */ }
-a, a:hover, a:active, a:focus, a:visited { cursor: pointer; text-decoration: none; color: $corBranco; }
+body {
+    background-color: #e6e6e6;
+    color: $corPrincipal;
+    &.hidden {
+        overflow: hidden;
+    }
+}
+a, a:hover, a:active, a:focus, a:visited { cursor: pointer; text-decoration: none; color: $corPrincipal; }
 
 /* TÍTULOS E TEXTOS */
 main { 
@@ -29,30 +35,37 @@ h1, h2, h3, h4, h5, h6 {
 h1 {  }
 h2 { font-size: 35px; padding: 25px 0px; color: $corPrincipal; }
 .content-text { color: $corText; }
-p { margin-bottom: 0px; }
+p { 
+    margin: 10px 0px 15px;
+    color: $corText;
+    &.p-primary {
+        color: $corPrincipal;
+    }
+}
 /* ELEMENTOS */
 ul { list-style-type: none; padding-inline-start: 0px; }
 img { max-width: 100%; }
 
 /* FORMULÁRIOS */
+label { color: $corText; font-weight: bold; }
 .input-contato, .area-contato, input[type=text], input[type=email], input[type=tel], select, textarea {
     text-align: left;
     width: 100%;
     padding: 12px 13px;
     margin-bottom: 10px;
-    border: solid 2px $corPrincipal;
+    border: solid 1.5px #b5b5b5;
     // border: solid 1px $corPrincipal;
-    background-color: transparent;
+    background-color: $corBranco;
     font-size: 18px;
     font-weight: 500;
     color: $corPrincipal;
-    border-radius: 30px;
+    border-radius: 5px;
     &::placeholder {
         color: #585858 !important;
     }
 }
 input[type=text], input[type=email], input[type=tel], select, textarea { -webkit-appearance: none; }
-textarea { border-radius: 20px !important; }
+textarea { border-radius: 5px !important; }
 input:focus, textarea:focus, button:focus { outline: none !important; }
 input[type=button], input[type=submit], input[type=reset], button {
     display: inline-block;
@@ -110,11 +123,11 @@ input[type=button], input[type=submit], input[type=reset], button {
 
 /* SLIDE */
 .flickity-prev-next-button.previous {
-    left: -20px !important;
+    left: -40px !important;
     background-color: transparent !important;
 }
 .flickity-prev-next-button.next {
-    right: -20px !important;
+    right: -40px !important;
     background-color: transparent !important;
 }
 .flickity-page-dots { display: none;}
@@ -212,12 +225,15 @@ img.aligncenter { display: block; margin-left: auto; margin-right: auto; }
 }
 
 @media screen and (max-width: $xsWidth) {
+    section { margin: 0px; }
     h1 { font-size: 1.1rem; }
     .button-primary, .button-secundary {
         padding: 11px 40px;
         margin: 1px auto;
         font-size: 16px;
     }
+    .flickity-prev-next-button.previous { left: -30px !important; background-color: #fff !important; }
+    .flickity-prev-next-button.next { right: -30px !important; background-color: #fff !important; }
 }
 @media screen and (min-width: $smWidth) and (max-width: $mdWidth) {
     h1 { font-size: 1.1rem; }

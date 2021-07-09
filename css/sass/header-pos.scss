@@ -28,6 +28,7 @@
 			margin: 0px !important;
             justify-content: space-between;
 			li {
+                position: relative;
 				padding: 0px 10px;
 				font-weight: 500;
 				font-size: 15px;
@@ -39,7 +40,27 @@
 					&:hover {
 						color: $corPrincipalClaro;
 					}
+                    span.caret.dropdown-toggle {
+                        margin: 5px;
+                    }
 				}
+                ul.dropdown-menu {
+                    background-color: $corPrincipalEscura;
+                    margin: 0px;
+                    border: none;
+                    li {
+                        padding: 5px 10px;
+                        a {
+                            color: $corBranco;
+                        }
+                    }
+                }
+                &:hover {
+                    ul.dropdown-menu {
+                        display: block;
+                    }
+                }
+                
 				&.link-orcamento {
 					a { color: $corSecundaria; }
 				}
@@ -103,7 +124,15 @@
     }
 }
 @media screen and (min-width: $mdWidth) and (max-width: $lgWidth) {
-    
+    .pos-header {
+        nav {
+            ul.header-menu {
+                li {
+                    font-size: 11px;
+                }
+            }
+        }
+    }
 }
 @media screen and (min-width: $lgWidth) and (max-width: $xlWidth) {
     

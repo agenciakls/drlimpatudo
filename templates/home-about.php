@@ -10,7 +10,7 @@
 						</div>
 						<div class="col-12">
 							<div class="content-biography content-section">
-								<p>Nossos serviços já incluem o serviço de busca e entrega do equipamento sem custo ou taxa!</p>
+								<p>Nossos serviços já incluem a busca e entrega do equipamento!</p>
 							</div>
 						</div>
 					</div>

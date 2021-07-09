@@ -4,6 +4,7 @@ $(document).ready(function () {
 	function toggleMenu() {
 		$(".hamburger").toggleClass('is-active');
 		$("nav").toggleClass('active');
+		$("body").toggleClass('hidden');
 	}
 	$(".hamburger").click(function () {
 		toggleMenu();

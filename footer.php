@@ -4,13 +4,13 @@
 			<div class="row">
 				<div class="col-md-2 col-6 d-md-block footer-data">
 					<div class="element-footer">
-						<h3>Menu</h3>
+						<h3>Atendimento</h3>
 						<div class="footer-site">
 						<?php 
-						if (has_nav_menu( 'principal' )) {
+						if (has_nav_menu( 'footer1' )) {
 							wp_nav_menu( 
 								array( 
-									'theme_location' => 'principal', 
+									'theme_location' => 'footer1', 
 									'menu_class' => 'header-menu',
 									'menu_id' => 'header-nav',
 									'container_class' => 'menu-principal-header', 
@@ -26,13 +26,13 @@
 				
 				<div class="col-md-2 col-6 d-md-block footer-data">
 					<div class="element-footer">
-						<h3>Menu</h3>
+						<h3>Institucional</h3>
 						<div class="footer-site">
 						<?php 
-						if (has_nav_menu( 'principal' )) {
+						if (has_nav_menu( 'footer2' )) {
 							wp_nav_menu( 
 								array( 
-									'theme_location' => 'principal', 
+									'theme_location' => 'footer2', 
 									'menu_class' => 'header-menu',
 									'menu_id' => 'header-nav',
 									'container_class' => 'menu-principal-header', 
@@ -48,8 +48,8 @@
 				<div class="col-md-4 footer-about">
 					<div class="element-footer list-contact">
 						<h3>FUNCIONAMENTO</h3>
-						<div class="footer-contact">
-							<a href="<?php echo InfoVar::show('phone'); ?>" target="_blank"><i class="fas fa-phone"></i> <?php echo InfoVar::show('showphone'); ?></a> <a href=""><i class="fab fa-whatsapp"></i> <?php echo InfoVar::show('showmobile'); ?></a>
+						<div class="footer-contact footer-phone">
+							<a href="<?php echo InfoVar::show('phone'); ?>" target="_blank"><i class="fas fa-phone"></i> <?php echo InfoVar::show('showphone'); ?></a> <a href="<?php echo InfoVar::show('whatsapp'); ?>"><i class="fab fa-whatsapp"></i> <?php echo InfoVar::show('showwhatsapp'); ?></a>
 						</div>
 						<div class="footer-contact">
 							<i class="far fa-clock"></i> <?php echo InfoVar::show('operation'); ?>
@@ -77,16 +77,6 @@
 								<div class="single-socials">
 									<a href="<?php echo InfoVar::show('facebook'); ?>" target="_blank">
 										<i class="fab fa-facebook-square fa-2x"></i>
-									</a>
-								</div>
-								<div class="single-socials">
-									<a href="<?php echo InfoVar::show('instagram'); ?>" target="_blank">
-										<i class="fab fa-instagram fa-2x"></i>
-									</a>
-								</div>
-								<div class="single-socials">
-									<a href="<?php echo InfoVar::show('youtube'); ?>" target="_blank">
-										<i class="fab fa-youtube fa-2x"></i>
 									</a>
 								</div>
 							</div>

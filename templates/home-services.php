@@ -11,22 +11,22 @@
 				array(
 					'img' => 'comercial.png',
 					'name' => 'Comercial',
-					'link' => InfoVar::show('higienizacao')
+					'link' => InfoVar::show('comercial')
 				),
 				array(
 					'img' => 'plataforma.png',
 					'name' => 'Plataforma',
-					'link' => InfoVar::show('sanitizacao')
+					'link' => InfoVar::show('plataforma')
 				),
 				array(
 					'img' => 'mecanica.png',
 					'name' => 'Mecanica',
-					'link' => InfoVar::show('impermeabilizacao')
+					'link' => InfoVar::show('mecanica')
 				),
 				array(
 					'img' => 'antropometrica.png',
 					'name' => 'Antropométrica',
-					'link' => InfoVar::show('hidratacao')
+					'link' => InfoVar::show('antropometrica')
 				),
 			);
 			foreach ($listaServices as $singleService) {
@@ -56,22 +56,22 @@
 				array(
 					'img' => 'padaria.png',
 					'name' => 'Padaria',
-					'link' => InfoVar::show('higienizacao')
+					'link' => InfoVar::show('padaria')
 				),
 				array(
 					'img' => 'acougue.png',
 					'name' => 'Açougue',
-					'link' => InfoVar::show('sanitizacao')
+					'link' => InfoVar::show('acougue')
 				),
 				array(
 					'img' => 'restaurantes.png',
 					'name' => 'Restaurantes',
-					'link' => InfoVar::show('impermeabilizacao')
+					'link' => InfoVar::show('restaurantes')
 				),
 				array(
 					'img' => 'supermercados.png',
 					'name' => 'Supermercados',
-					'link' => InfoVar::show('hidratacao')
+					'link' => InfoVar::show('supermercados')
 				),
 			);
 			foreach ($listaServices as $singleService) {

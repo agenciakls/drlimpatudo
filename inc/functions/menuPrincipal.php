@@ -25,4 +25,15 @@ function menuPreHeader() {
 	register_nav_menu('premenu', __('Pré Header', 'theme-slug'));
 }
 add_action('after_setup_theme', 'menuPreHeader');
+
+
+function menuFooter1() {
+	register_nav_menu('footer1', __('Menu Footer 1', 'theme-slug'));
+}
+add_action('after_setup_theme', 'menuFooter1');
+
+function menuFooter2() {
+	register_nav_menu('footer2', __('Menu Footer 2', 'theme-slug'));
+}
+add_action('after_setup_theme', 'menuFooter2');
 ?>

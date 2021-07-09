@@ -16,20 +16,20 @@
 				<div class="box-header">
 					<div class="header-icons">
 						<div class="header-single-icon">
-							<a href=""><i class="fas fa-phone"></i> (21) 3331-8840</a>
+							<a href="<?php echo InfoVar::show('phone'); ?>"><i class="fas fa-phone-alt"></i> <?php echo InfoVar::show('showphone'); ?></a>
 						</div>
 						<div class="header-single-icon">
-							<a href=""><i class="fab fa-whatsapp"></i> (21) 99177-9602</a>
+							<a href="<?php echo InfoVar::show('whatsapp'); ?>"><i class="fab fa-whatsapp"></i> <?php echo InfoVar::show('showwhatsapp'); ?></a>
 						</div>
 						<div class="header-single-icon">
-							<a href=""><i class="fas fa-envelope"></i> E-Mail</a>
+							<a href="<?php echo InfoVar::show('sendmail'); ?>"><i class="fas fa-envelope"></i> E-Mail</a>
 						</div>
 						<div class="header-single-icon">
-							<a href=""><i class="fas fa-question-circle"></i> Atendimento</a>
+							<a href="<?php echo get_page_link(InfoVar::show('contato')); ?>"><i class="fas fa-question-circle"></i> Atendimento</a>
 						</div>
 					</div>
 					<div class="input-search">
-						<form action="">
+						<form action="<?php bloginfo('url'); ?>">
 							<input type="text" class="search-field" name="s" value="" placeholder="Digite sua pesquisa"><button type="submit" class="search-button"><i class="fas fa-search"></i></button>
 						</form>
 					</div>

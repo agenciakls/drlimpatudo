@@ -4,6 +4,7 @@ footer {
 	padding: 25px 0px;
 	background-color: $corSecundariaEscura;
 	color: $corBranco;
+	font-size: 15px;
 	.footer-data { text-align: left; display: flex; }
 	.footer-about { 
 		.footer-app {
@@ -25,6 +26,7 @@ footer {
 			font-weight: bold;
 			font-size: 19px;
 			padding: 7px 0px;
+			text-transform: uppercase;
 		}
 		.district-list {
 			display: flex;
@@ -39,7 +41,6 @@ footer {
 		}
 		.footer-site {
 			a {
-				font-size: 17px;
 				color: $corBranco;
 			}
 		}
@@ -49,7 +50,7 @@ footer {
 		text-align: center;
 		.img-footer {
 			width: 100%;
-			max-width: 240px;
+			max-width: 170px;
 		}
 	}
 	.title-socials { text-align: center; }
@@ -62,8 +63,6 @@ footer {
 	}
 	.list-contact {
 		.footer-contact {
-			display: flex;
-			align-items: center;
 			color: $corBranco;
 			margin: 5px 0px;
 			border-radius: 10px;
@@ -71,37 +70,16 @@ footer {
 			i {
 				margin: 3px;
 			}
+			&.footer-phone {
+				display: flex;
+				align-items: center;
+				flex-wrap: wrap;
+			}
 		}
 		a {
+			color: $corBranco;
 			margin-right: 15px;
 			display: block;
-		}
-	}
-}
-.section-button-call {
-	.button-call {
-		max-width: 310px;
-		background-color: $corPrincipal;
-		border-radius: 7px;
-		display: flex;
-		justify-content: space-between;
-		align-items: stretch;
-		margin: 0px auto;
-		.text {
-			color: $corBranco;
-			padding: 15px;
-			width: 100%;
-		}
-		.icon {
-			background-color: $corPrincipalEscura;
-			border-radius: 0px 7px 7px 0px;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			padding: 0px 15px;
-			img {
-				width: 30px;
-			}
 		}
 	}
 }
@@ -129,15 +107,22 @@ footer {
 			margin: 13px auto;
 		}
 	}
-	footer {
+	footer { 
+		font-size: 13px; 
+		.list-contact {
+			.footer-contact {
+				display: inline-block;
+				font-size: 13px;
+				&.footer-phone {
+					justify-content: center;
+				}
+			}
+		}
 		.element-footer {
 			margin: 0px auto;
 			text-align: center;
 			h3 {
 				font-size: 17px;
-			}
-			.footer-site {
-				a { font-size: 13px; }
 			}
 			.footer-app {
 				justify-content: center;
@@ -164,7 +149,7 @@ footer {
 				.footer-contact {
 					display: inline-block;
 					text-align: center;
-					font-size: 15px;
+					font-size: 13px;
 				}
 			}
 		}
@@ -178,14 +163,12 @@ footer {
 		}
 	}
 	footer {
+		font-size: 17px;
 		.element-footer {
 			margin: 0px auto;
 			text-align: center;
 			h3 {
 				font-size: 19px;
-			}
-			.footer-site {
-				a { font-size: 17px; }
 			}
 			.footer-app {
 				justify-content: center;
@@ -208,10 +191,11 @@ footer {
 			}
 		}
 		.list-contact {
-			a {
-				.footer-contact {
-					display: inline-block;
-					text-align: center;
+			.footer-contact {
+				text-align: center;
+				display: inline-block;
+				&.footer-phone {
+					justify-content: center;
 				}
 			}
 		}
@@ -219,11 +203,7 @@ footer {
 }
 @media screen and (min-width: $mdWidth) and (max-width: $lgWidth) {
 	footer {
-		.element-footer {
-			.footer-site {
-				a { font-size: 17px; }
-			}
-		}
+		font-size: 15px;
 		.footer-copyright {
 			p {
 				font-size: 19px;
@@ -232,6 +212,11 @@ footer {
 		.list-socials {
 			.single-socials {
 				padding: 10px;
+			}
+		}
+		.list-contact {
+			.footer-contact {
+				word-wrap: break-word;
 			}
 		}
 	}

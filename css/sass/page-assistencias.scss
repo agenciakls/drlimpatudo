@@ -1,0 +1,46 @@
+.page-assistencias {
+	.list-assistencias {
+		.box-assistencias {
+			background-color: #BFBFBF;
+			padding: 15px 20px;
+			margin: 10px 0px;
+			border-radius: 20px;
+			.box-intern {
+				.img-area {
+					img {
+						border-radius: 15px;
+					}
+				}
+				.content {
+					h1 {
+						text-transform: uppercase;
+						font-size: 22px;
+						margin-bottom: 10px;
+					}
+					h3 {
+						color: $corText;
+						font-size: 18px;
+						border-bottom: solid 1px #e8e8e8;
+						padding: 5px 0px;
+						text-transform: uppercase;
+					}
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: $xsWidth) {
+
+}
+@media screen and (min-width: $smWidth) and (max-width: $mdWidth) {
+	
+}
+@media screen and (min-width: $mdWidth) and (max-width: $lgWidth) {
+
+}
+@media screen and (min-width: $lgWidth) and (max-width: $xlWidth) {
+	
+}
+@media screen and (min-width: $xlWidth) {
+	
+}
